@@ -1,0 +1,14 @@
+Control
+Sprite2D
+CollisionPolygon2D
+CollisionShape2D
+StaticBody2D
+Timer
+Node
+CharacterBody2D
+AnimationPlayer
+HBoxContainer
+Label
+TextureRect
+MarginContainer
+Panel

@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cyahp8rnw37ys"]
+
+[ext_resource type="Texture2D" uid="uid://ce2u8mhm6jcsh" path="res://Items/Coin.png" id="1_2n54g"]
+[ext_resource type="FontFile" uid="uid://cb4jctb12u184" path="res://textures/classic font.ttf" id="2_dw43w"]
+
+[node name="CoinHBox" type="HBoxContainer" unique_id=3592410]
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 32.0
+offset_bottom = 17.0
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1760344549]
+custom_minimum_size = Vector2(13, 13)
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("1_2n54g")
+stretch_mode = 4
+
+[node name="CoinAmount" type="Label" parent="." unique_id=2029270023]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.972549, 0.8901961, 0.59607846, 1)
+theme_override_colors/font_shadow_color = Color(0.16862746, 0.16862746, 0.16862746, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("2_dw43w")
+text = "12"
+vertical_alignment = 1

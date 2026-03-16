@@ -1,0 +1,98 @@
+[gd_scene format=3 uid="uid://ccft41suadgdv"]
+
+[ext_resource type="Script" uid="uid://332b5k31oveq" path="res://Scenes/ItemSlot/item_slot.gd" id="1_o5h2q"]
+[ext_resource type="Texture2D" uid="uid://ibhp47dpyx2h" path="res://textures/HoverBox.png" id="2_o10pb"]
+[ext_resource type="FontFile" uid="uid://cb4jctb12u184" path="res://textures/classic font.ttf" id="2_quq0m"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8lspn"]
+texture = ExtResource("2_o10pb")
+
+[node name="Item_slot" type="Control" unique_id=1278569803]
+z_index = 1
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_o5h2q")
+
+[node name="Item" type="Sprite2D" parent="." unique_id=1176460051]
+
+[node name="Panel" type="Panel" parent="." unique_id=1237373521]
+z_index = 10
+layout_mode = 0
+offset_right = 140.0
+offset_bottom = 59.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_8lspn")
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel" unique_id=457154362]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.99100006
+anchor_bottom = 0.97700006
+offset_left = 10.0
+offset_top = 6.0
+offset_right = -9.7400055
+offset_bottom = -4.6430016
+mouse_filter = 2
+
+[node name="Control" type="Control" parent="Panel/MarginContainer" unique_id=1784092092]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="NameLabel" type="Label" parent="Panel/MarginContainer/Control" unique_id=1395646654]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = -2.0
+offset_bottom = -34.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_quq0m")
+theme_override_font_sizes/font_size = 12
+text = "Basic Ball"
+vertical_alignment = 1
+
+[node name="RarityLabel" type="Label" parent="Panel/MarginContainer/Control" unique_id=1282402621]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 34.0
+offset_right = 58.0
+offset_bottom = 42.0
+theme_override_fonts/font = ExtResource("2_quq0m")
+theme_override_font_sizes/font_size = 6
+text = "Rarity: Common"
+
+[node name="PriceLabel" type="Label" parent="Panel/MarginContainer/Control" unique_id=2049429013]
+layout_mode = 0
+offset_left = 101.0
+offset_top = 34.0
+offset_right = 116.0
+offset_bottom = 44.0
+theme_override_colors/font_color = Color(0.972549, 0.77254903, 0.22745098, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("2_quq0m")
+theme_override_font_sizes/font_size = 10
+text = "100"
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="DescLabel" type="Label" parent="Panel/MarginContainer/Control" unique_id=309017115]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 15.0
+offset_right = 95.0
+offset_bottom = 34.0
+theme_override_fonts/font = ExtResource("2_quq0m")
+theme_override_font_sizes/font_size = 8
+text = "This is a basic Ball"
+autowrap_mode = 3
+
+[node name="BagRacquet" type="Sprite2D" parent="." unique_id=1112040353]
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

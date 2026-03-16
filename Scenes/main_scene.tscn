@@ -1,0 +1,139 @@
+[gd_scene format=3 uid="uid://bp0kd8lpit4ut"]
+
+[ext_resource type="Texture2D" uid="uid://be8yravqxxg8x" path="res://Scenes/ParkScene.png" id="1_jv6wh"]
+[ext_resource type="Texture2D" uid="uid://bqvyyjvp65ppt" path="res://textures/ParkShop.png" id="2_6ev3c"]
+[ext_resource type="PackedScene" uid="uid://ko8w24y58i60" path="res://Player/Player.tscn" id="3_jv6wh"]
+[ext_resource type="PackedScene" uid="uid://cyahp8rnw37ys" path="res://UI/coinbox.tscn" id="4_x6ack"]
+[ext_resource type="Script" uid="uid://1t0wbtqtnn24" path="res://UI/coinbox.gd" id="5_iacmt"]
+[ext_resource type="PackedScene" uid="uid://dninsxpx41bju" path="res://Customers/customer_spawner.tscn" id="6_6ev3c"]
+[ext_resource type="PackedScene" uid="uid://c4c4omaqgh34g" path="res://Customers/customer.tscn" id="7_maf8m"]
+
+[sub_resource type="GDScript" id="GDScript_iacmt"]
+script/source = "extends Node2D
+
+
+@onready var player: CharacterBody2D = $Player
+
+var inventory_scene = preload(\"res://Scenes/inventory.tscn\")
+var near_counter: bool = false
+var inventory_open: bool = false
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	player.position = GameData.player_position
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	if inventory_open:
+		return
+	if near_counter and Input.is_action_just_pressed(\"Interact\"):
+		GameData.player_position = player.position
+		if GameData.customer_queue.size() > 0:
+			var front = GameData.customer_queue[0]
+			if front.state == front.CustomerState.WAITING:
+				front.state = front.CustomerState.BEING_SERVED
+		open_inventory()
+
+
+
+func open_inventory() -> void:
+	inventory_open = true
+	var overlay = CanvasLayer.new()
+	var inventory = inventory_scene.instantiate()
+	add_child(overlay)
+	overlay.add_child(inventory)
+	player.set_physics_process(false) # Freezes the player
+	inventory.closed.connect(func():
+		inventory_open = false
+		player.set_physics_process(true)
+		overlay.queue_free()
+	)
+
+# Handles when the character is behind the counter
+func _on_counter_zone_body_entered(body: Node2D) -> void:
+	if body == player:
+		near_counter = true
+		print(\"behind counterd\")
+
+func _on_counter_zone_body_exited(body: Node2D) -> void:
+	if body == player:
+		near_counter = false
+"
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_jv6wh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jv6wh"]
+size = Vector2(556, 43)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x6ack"]
+size = Vector2(77, 15)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_maf8m"]
+
+[node name="MainScene" type="Node2D" unique_id=1727735438]
+script = SubResource("GDScript_iacmt")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1856976038]
+texture = ExtResource("1_jv6wh")
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="Shop" type="Sprite2D" parent="." unique_id=102943475]
+z_index = 1
+position = Vector2(30, 87)
+texture = ExtResource("2_6ev3c")
+centered = false
+
+[node name="Player" parent="." unique_id=1424993457 instance=ExtResource("3_jv6wh")]
+position = Vector2(147, 137)
+
+[node name="Player Ground" type="StaticBody2D" parent="." unique_id=1835557441]
+visible = false
+collision_layer = 7
+collision_mask = 0
+physics_material_override = SubResource("PhysicsMaterial_jv6wh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player Ground" unique_id=140253645]
+position = Vector2(161, 172.5)
+shape = SubResource("RectangleShape2D_jv6wh")
+
+[node name="CounterZone" type="Area2D" parent="." unique_id=1447982973]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CounterZone" unique_id=552877081]
+position = Vector2(68.5, 143.5)
+shape = SubResource("RectangleShape2D_x6ack")
+
+[node name="CoinHBox" parent="." unique_id=3592410 instance=ExtResource("4_x6ack")]
+offset_left = 3.470854
+offset_top = 1.1418681
+offset_right = 33.470856
+offset_bottom = 16.141869
+script = ExtResource("5_iacmt")
+
+[node name="CustomerSpawner" parent="." unique_id=377438776 instance=ExtResource("6_6ev3c")]
+customer_scene = ExtResource("7_maf8m")
+
+[node name="Ramp" type="StaticBody2D" parent="." unique_id=1785146388]
+collision_layer = 2
+collision_mask = 0
+physics_material_override = SubResource("PhysicsMaterial_maf8m")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ramp" unique_id=921305829]
+position = Vector2(25, 150)
+polygon = PackedVector2Array(0, 1, 17, -3, 70, -3, 88, 1, 0, 2)
+
+[node name="Customer Ground" type="StaticBody2D" parent="." unique_id=1716550804]
+collision_layer = 12
+collision_mask = 0
+physics_material_override = SubResource("PhysicsMaterial_jv6wh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Customer Ground" unique_id=1420086988]
+position = Vector2(161, 177)
+shape = SubResource("RectangleShape2D_jv6wh")
+
+[connection signal="body_entered" from="CounterZone" to="." method="_on_counter_zone_body_entered"]
+[connection signal="body_exited" from="CounterZone" to="." method="_on_counter_zone_body_exited"]
