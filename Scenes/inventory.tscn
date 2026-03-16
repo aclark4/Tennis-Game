@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bg6oklaeosicj"]
 
 [ext_resource type="Script" uid="uid://cu0h6465u0vlm" path="res://Scenes/inventory.gd" id="1_k5gp2"]
-[ext_resource type="Texture2D" uid="uid://df1q1x8eabq4l" path="res://Customers/customer.png" id="2_c5ffv"]
+[ext_resource type="Texture2D" uid="uid://df1q1x8eabq4l" path="res://Customers/Grace/Grace.png" id="2_c5ffv"]
 [ext_resource type="Texture2D" uid="uid://bs6g5nevc6cvy" path="res://Scenes/Inventory.png" id="2_k5gp2"]
 [ext_resource type="Script" uid="uid://drka1i07w0bmu" path="res://Scenes/customer_drop_zone.gd" id="3_sd8fj"]
 [ext_resource type="PackedScene" uid="uid://cyahp8rnw37ys" path="res://UI/coinbox.tscn" id="3_yxepq"]
@@ -25,15 +25,6 @@ scale = Vector2(3.5, 3.5)
 texture = ExtResource("2_c5ffv")
 hframes = 2
 vframes = 2
-
-[node name="CustomerDropZone" type="Control" parent="Customer" unique_id=1643761631]
-layout_mode = 3
-anchors_preset = 0
-offset_left = -5.1428566
-offset_top = -10.285714
-offset_right = 4.8571434
-offset_bottom = -0.28571415
-script = ExtResource("3_sd8fj")
 
 [node name="Background" type="Sprite2D" parent="." unique_id=144554256]
 z_index = -1
@@ -75,3 +66,12 @@ metadata/_edit_lock_ = true
 position = Vector2(161, 121)
 texture = ExtResource("6_sd8fj")
 metadata/_edit_lock_ = true
+
+[node name="CustomerDropZone" type="Control" parent="." unique_id=869513363]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 53.0
+offset_top = 17.0
+offset_right = 90.0
+offset_bottom = 53.0
+script = ExtResource("3_sd8fj")

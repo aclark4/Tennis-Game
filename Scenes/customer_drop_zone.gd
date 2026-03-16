@@ -1,9 +1,11 @@
 extends Control
 
+var active: bool = false
+signal item_dropped(item: Item)
 
 func _can_drop_data(at_position: Vector2, data: Variant) -> bool:
-	return data is Item
+	return active and data is Item
 	
 func _drop_data(at_position: Vector2, data: Variant) -> void:
-	var inventory = get_parent().get_parent()
-	inventory._on_item_selected(data)
+	print("Item dropped")
+	emit_signal("item_dropped", data)

@@ -1,8 +1,8 @@
 extends Node
-var Balls: Array = []
-var Racquets: Array = []
-var Bags: Array = []
-var Shoes: Array = []
+var Balls: Array[Item] = []
+var Racquets: Array[Item] = []
+var Bags: Array[Item] = []
+var Shoes: Array[Item] = []
 
 
 func _ready():
@@ -35,3 +35,11 @@ func _ready():
 		Item.new().setup("Standard Shoes", "Shoes", 100, "Standard tennis shoes"),
 		Item.new().setup("Speed Shoes", "Shoes", 150, "Speed boosting tennis shoes!"),
 	]
+	
+func get_items_by_type(item_type: String) -> Array[Item]:
+	match item_type:
+		"Balls": return Balls
+		"Racquets": return Racquets
+		"Bags": return Bags
+		"Shoes": return Shoes
+		_: return []

@@ -1,0 +1,2 @@
+CustomerProfile
+Resource

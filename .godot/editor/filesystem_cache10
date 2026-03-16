@@ -1,16 +1,20 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1773672902
+::res://::1773689573
 Game_Development_Roadmap.md::TextFile::-1::1773423295::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::2615730773902464914::1773423088::1773424425::1::::<><><>0<>0<>61b78ea4eac68a2b90f0f7b960955957<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://Customers/::1773524442
-customer.gd::GDScript::6351663781391025737::1773524442::0::1::::<>CharacterBody2D<><>0<>0<><>::
-customer.png::CompressedTexture2D::7564899252598209517::1773510602::1773510619::1::::<><><>0<>0<>ebe6cc57c97ba57bb8e37c69daf110a2<>res://.godot/imported/customer.png-7989f2c23ca2161d9bfa3c3b56f1a752.ctex::
-customer.tscn::PackedScene::6814233013317651816::1773524442::0::1::::<><><>0<>0<><>::uid://cwq18erl3cdj2::::res://Customers/customer.gd<>uid://df1q1x8eabq4l::::res://Customers/customer.png<>uid://ci4pup2s6i6u7::::res://Customers/Indicator.png
-customer_spawner.gd::GDScript::7178733828657814722::1773519167::0::1::::<>Node<><>0<>0<><>::
+::res://Customers/::1773689573
+customer.gd::GDScript::6351663781391025737::1773687154::0::1::::Customer<>CharacterBody2D<><>0<>0<><>::
+customer.tscn::PackedScene::6814233013317651816::1773689573::0::1::::<><><>0<>0<><>::uid://cwq18erl3cdj2::::res://Customers/customer.gd<>uid://df1q1x8eabq4l::::res://Customers/Grace/Grace.png<>uid://ci4pup2s6i6u7::::res://Customers/Indicator.png
+customer_spawner.gd::GDScript::7178733828657814722::1773689548::0::1::::<>Node<><>0<>0<><>::
 customer_spawner.tscn::PackedScene::8089054737896365962::1773519157::0::1::::<><><>0<>0<><>::uid://dajoxyd6wshtq::::res://Customers/customer_spawner.gd
+drop_area.gd::GDScript::5598971490556211257::1773688443::0::1::::DropReceiver<>Control<><>0<>0<><>::
 Indicator.png::CompressedTexture2D::5395166372547375988::1773514175::1773514177::1::::<><><>0<>0<>b434452e0743346913df36a00b8ab087<>res://.godot/imported/Indicator.png-0c6063d5b17cd2fc0ac9596cfdfbf605.ctex::
-::res://Data/::1773523191
-GameData.gd::GDScript::820818450676309475::1773515104::0::1::::<>Node<><>0<>0<><>::
+::res://Customers/Grace/::1773689573
+Grace.png::CompressedTexture2D::7564899252598209517::1773510602::1773689573::1::::<><><>0<>0<>caea35b4868fd469ae6d757c3f9281c7<>res://.godot/imported/Grace.png-4411c944a8fc821245db7e5b355550c1.ctex::
+Grace.tres::Resource::5325100737684825475::1773688948::0::1::::<><><>0<>0<><>::
+::res://Data/::1773689466
+CustomerProfile.gd::GDScript::8463676463704465021::1773687828::0::1::::CustomerProfile<>Resource<><>0<>0<><>::
+GameData.gd::GDScript::820818450676309475::1773689466::0::1::::<>Node<><>0<>0<><>::
 Item.gd::GDScript::4246754744239246567::1773522929::0::1::::Item<>Resource<><>0<>0<><>::
 ItemDatabase.gd::GDScript::5065669719006262400::1773523191::0::1::::<>Node<><>0<>0<><>::
 ::res://Items/::1773462379
@@ -40,27 +44,26 @@ Standard Racquet.png::CompressedTexture2D::1534207470401746345::1773448400::1773
 ::res://Items/Shoes/::1773457449
 Speed Shoes.png::CompressedTexture2D::1804036853031142222::1773446923::1773456275::1::::<><><>0<>0<>ac6ead736246d49b9194519ce62e20f4<>res://.godot/imported/Speed Shoes.png-77f32d69bdb7eb3912f9930482c9a47f.ctex::
 Standard Shoes.png::CompressedTexture2D::3131369336787713428::1773444340::1773457449::1::::<><><>0<>0<>2a1f685131e214d40c8488c2c8665195<>res://.godot/imported/Standard Shoes.png-9eb546b257c0479c7fca369f12c45ce4.ctex::
-::res://Player/::1773523191
+::res://Player/::1773689548
 boy_player.png::CompressedTexture2D::5257220253949811479::1773508884::1773510610::1::::<><><>0<>0<>2525ae97a6bd6674f63ad2f034980413<>res://.godot/imported/boy_player.png-ae911239be54ef3df2f69dfe05e2293f.ctex::
 girl_player.png::CompressedTexture2D::6110988917771285375::1773508887::1773510610::1::::<><><>0<>0<>0af4efe98c5042fa7f091fc508b15234<>res://.godot/imported/girl_player.png-b77e002964ef86ba3bca8609163a8b67.ctex::
 player.gd::GDScript::4343203242210705003::1773512893::0::1::::<>CharacterBody2D<><>0<>0<><>::
 Player.png::CompressedTexture2D::1101563064288824551::1773430040::1773510610::1::::<><><>0<>0<>c51c0fd6517f5b1effffce17589209c6<>res://.godot/imported/Player.png-3d0801c65bdfc563657cfa304115f1c7.ctex::
-Player.tscn::PackedScene::732834137225991295::1773523191::0::1::::<><><>0<>0<><>::uid://b2446m2wydw80::::res://Player/player.gd<>uid://cg5vwc2w7v2d4::::res://Player/boy_player.png
-::res://Scenes/::1773671777
-customer_drop_zone.gd::GDScript::8373163061399207448::1773525869::0::1::::<>Control<><>0<>0<><>::
-inventory.gd::GDScript::6228709635015648990::1773524988::0::1::::<>Node2D<><>0<>0<><>::
+Player.tscn::PackedScene::732834137225991295::1773689548::0::1::::<><><>0<>0<><>::uid://b2446m2wydw80::::res://Player/player.gd<>uid://cg5vwc2w7v2d4::::res://Player/boy_player.png
+::res://Scenes/::1773689573
+customer_drop_zone.gd::GDScript::8373163061399207448::1773686790::0::1::::<>Control<><>0<>0<><>::
+inventory.gd::GDScript::6228709635015648990::1773689466::0::1::::<>Node2D<><>0<>0<><>::
 Inventory.png::CompressedTexture2D::3714234145268090274::1773538310::1773671777::1::::<><><>0<>0<>49b4be8de606b9b9053699c66f6d9f6e<>res://.godot/imported/Inventory.png-06a86f6dadac9dd7675d503d44f90904.ctex::
-inventory.tscn::PackedScene::2872417929692946653::1773526191::0::1::::<><><>0<>0<><>::uid://cu0h6465u0vlm::::res://Scenes/inventory.gd<>uid://df1q1x8eabq4l::::res://Customers/customer.png<>uid://bs6g5nevc6cvy::::res://Scenes/Inventory.png<>uid://drka1i07w0bmu::::res://Scenes/customer_drop_zone.gd<>uid://cyahp8rnw37ys::::res://UI/coinbox.tscn<>uid://1t0wbtqtnn24::::res://UI/coinbox.gd<>uid://clsrdso52fgu4::::res://Scenes/Shelf.png
+inventory.tscn::PackedScene::2872417929692946653::1773689573::0::1::::<><><>0<>0<><>::uid://cu0h6465u0vlm::::res://Scenes/inventory.gd<>uid://df1q1x8eabq4l::::res://Customers/Grace/Grace.png<>uid://bs6g5nevc6cvy::::res://Scenes/Inventory.png<>uid://cyahp8rnw37ys::::res://UI/coinbox.tscn<>uid://1t0wbtqtnn24::::res://UI/coinbox.gd<>uid://clsrdso52fgu4::::res://Scenes/Shelf.png
 main_scene.gd::GDScript::579458656997647679::1773432565::0::1::::<>Node2D<><>0<>0<><>::
-main_scene.tscn::PackedScene::3491477060380866919::1773523374::0::1::::<><><>0<>0<><>::uid://be8yravqxxg8x::::res://Scenes/ParkScene.png<>uid://bqvyyjvp65ppt::::res://textures/ParkShop.png<>uid://ko8w24y58i60::::res://Player/Player.tscn<>uid://cyahp8rnw37ys::::res://UI/coinbox.tscn<>uid://1t0wbtqtnn24::::res://UI/coinbox.gd<>uid://dninsxpx41bju::::res://Customers/customer_spawner.tscn<>uid://c4c4omaqgh34g::::res://Customers/customer.tscn
+main_scene.tscn::PackedScene::3491477060380866919::1773673014::0::1::::<><><>0<>0<><>::uid://be8yravqxxg8x::::res://Scenes/ParkScene.png<>uid://bqvyyjvp65ppt::::res://textures/ParkShop.png<>uid://ko8w24y58i60::::res://Player/Player.tscn<>uid://cyahp8rnw37ys::::res://UI/coinbox.tscn<>uid://1t0wbtqtnn24::::res://UI/coinbox.gd<>uid://dninsxpx41bju::::res://Customers/customer_spawner.tscn<>uid://c4c4omaqgh34g::::res://Customers/customer.tscn
 ParkScene.png::CompressedTexture2D::2736788123651488889::1773673011::1773673013::1::::<><><>0<>0<>90d45e3a4e0bdf617ace4c2bc99d1689<>res://.godot/imported/ParkScene.png-dca20e47498fc74b61f5fb9295d7570e.ctex::
 Shelf.png::CompressedTexture2D::5583115961683291253::1773523932::1773523935::1::::<><><>0<>0<>ff17e3a33ce88d8fabfcec4720da2c31<>res://.godot/imported/Shelf.png-4b6556bbca539d015443f0f07c26e87f.ctex::
 ::res://Scenes/ItemSlot/::1773526178
 item_slot.gd::GDScript::2024732936033239676::1773526178::0::1::::<>Control<><>0<>0<><>::
 item_slot.tscn::PackedScene::4924747748640787243::1773524244::0::1::::<><><>0<>0<><>::uid://332b5k31oveq::::res://Scenes/ItemSlot/item_slot.gd<>uid://ibhp47dpyx2h::::res://textures/HoverBox.png<>uid://cb4jctb12u184::::res://textures/classic font.ttf
-::res://TennisGame/::1773672383
-Hello.md::TextFile::-1::1773672377::0::1::::<><><>0<>0<><>::
-Welcome.md::TextFile::-1::1773672366::0::1::::<><><>0<>0<><>::
+::res://TennisGame/::1773686909
+2026-03-16.md::TextFile::-1::1773687002::0::1::::<><><>0<>0<><>::
 ::res://textures/::1773518267
 classic font.ttf::FontFile::4903448191121352503::1773504594::1773504648::1::::<><><>0<>0<>3fd9540bdf0ceb248bd28456aabd190b<>res://.godot/imported/classic font.ttf-5738c69ba764bfcbcdf9f04cbeac2b67.fontdata::
 fontcredit.txt::TextFile::-1::1773504658::0::1::::<><><>0<>0<><>::

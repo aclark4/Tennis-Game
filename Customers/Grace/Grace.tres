@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CustomerProfile" format=3 uid="uid://ch4rvpuoy3stv"]
+
+[ext_resource type="Script" uid="uid://dst4rrdv56mpx" path="res://Data/CustomerProfile.gd" id="1_dr7iq"]
+
+[resource]
+script = ExtResource("1_dr7iq")
+id = "grace"
+customer_name = "Grace"
+personality = "Shoes"
+metadata/_custom_type_script = "uid://dst4rrdv56mpx"
