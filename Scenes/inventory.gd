@@ -2,7 +2,7 @@ extends Node2D
 
 const MAX_BALL_SLOTS: int = 6
 const MAX_RACQUET_SLOTS: int = 6
-const MAX_SHOE_SLOTS: int = 5
+const MAX_SHOE_SLOTS: int = 4
 const MAX_BAG_SLOTS: int = 4
 
 @onready var item_panel: Panel = $Panel
@@ -23,7 +23,18 @@ signal item_sold(item: Item)
 
 func _ready() -> void:
 	if GameData.customer_queue.size() > 0:
+		currently_selling = true
 		serving_customer = GameData.customer_queue[0]
+		
+		if serving_customer.state == serving_customer.CustomerState.BEING_SERVED:
+			print("SERVED CURRENTLY")
+			customer_sprite.texture = serving_customer.profile.sprite
+			customer_sprite.hframes = 2
+			customer_sprite.vframes = 2
+			customer_sprite.frame = 0
+			customer_sprite.visible = true
+		else:
+			customer_sprite.visible = false
 		
 	if serving_customer != null:
 		customer_drop_zone.active = true
@@ -36,49 +47,26 @@ func _ready() -> void:
 
 	var item_slot_scene: PackedScene = preload("res://Scenes/ItemSlot/item_slot.tscn")
 
-	var balls: int = 0
-	for item in GameData.shop_balls:
-		if balls >= MAX_BALL_SLOTS:
-			break
-		var slot = item_slot_scene.instantiate()
-		slot.position = Vector2(40 + balls * 25, 85)
-		add_child(slot)
-		slot.setup(item)
-		slot.position -= slot.size / 2.0
-		balls += 1
+	var counts = {"Balls": 0, "Racquets": 0, "Bags": 0, "Shoes": 0}
+	var limits = {"Balls": MAX_BALL_SLOTS, "Racquets": MAX_RACQUET_SLOTS, "Bags": MAX_BAG_SLOTS, "Shoes": MAX_SHOE_SLOTS}
 
-	var racquets: int = 0
-	for item in GameData.shop_racquets:
-		if racquets >= MAX_RACQUET_SLOTS:
-			break
+	for item in GameData.player_inventory:
+		var t = item.item_type
+		if not counts.has(t):
+			continue
+		if counts[t] >= limits[t]:
+			continue
 		var slot = item_slot_scene.instantiate()
-		slot.position = Vector2(208 + (racquets % 3) * 36, 95 + (racquets / 3) * 55)
+		var i = counts[t]
+		match t:
+			"Balls":    slot.position = Vector2(40 + i * 25, 85)
+			"Racquets": slot.position = Vector2(208 + (i % 3) * 36, 95 + (i / 3) * 55)
+			"Bags":     slot.position = Vector2(50 + i * 40, 152)
+			"Shoes":    slot.position = Vector2(45 + i * 40, 114)
 		add_child(slot)
-		slot.setup(item)
+		slot.setup(item, i)
 		slot.position -= slot.size / 2.0
-		racquets += 1
-
-	var bags: int = 0
-	for item in GameData.shop_bags:
-		if bags >= MAX_BAG_SLOTS:
-			break
-		var slot = item_slot_scene.instantiate()
-		slot.position = Vector2(50 + bags * 40, 152)
-		add_child(slot)
-		slot.setup(item, bags)
-		slot.position -= slot.size / 2.0
-		bags += 1
-
-	var shoes: int = 0
-	for item in GameData.shop_shoes:
-		if shoes >= MAX_SHOE_SLOTS:
-			break
-		var slot = item_slot_scene.instantiate()
-		slot.position = Vector2(45 + shoes * 50, 114)
-		add_child(slot)
-		slot.setup(item)
-		slot.position -= slot.size / 2.0
-		shoes += 1
+		counts[t] += 1
 	
 	if GameData.customer_queue.size() > 0: # This means there is a customer waiting
 		currently_selling = true

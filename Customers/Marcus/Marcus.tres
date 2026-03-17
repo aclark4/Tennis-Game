@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CustomerProfile" format=3 uid="uid://duvxu6y6djryw"]
+
+[ext_resource type="Script" uid="uid://dst4rrdv56mpx" path="res://Data/CustomerProfile.gd" id="1_4by42"]
+[ext_resource type="Texture2D" uid="uid://dkfgg0804yq6l" path="res://Customers/Marcus/Marcus.png" id="2_cgqjs"]
+
+[resource]
+script = ExtResource("1_4by42")
+id = "marcus"
+customer_name = "Marcus"
+personality = "Shoes"
+sprite = ExtResource("2_cgqjs")
+metadata/_custom_type_script = "uid://dst4rrdv56mpx"

@@ -37,6 +37,12 @@ func _ready() -> void:
 	
 func setup(p: CustomerProfile) -> void:
 	profile = p
+	assert(profile.sprite != null, "Customer '" + profile.customer_name + "' is missing a sprite!")
+	sprite.texture = profile.sprite
+	if profile.sprite:
+		sprite.texture = profile.sprite
+		sprite.hframes = 2
+		sprite.vframes = 2
 	wanted_item = _pick_wanted_item()
 	
 func _physics_process(delta: float) -> void:
@@ -72,6 +78,7 @@ func _physics_process(delta: float) -> void:
 			
 		CustomerState.LEAVING:
 			if position.x > 340 or position.x < -20:
+				print("leaving now")
 				left.emit()
 				queue_free()
 			else:
@@ -98,12 +105,13 @@ func reposition(new_x: float) -> void:
 func _pick_wanted_item() -> Item:
 	var pool: Array[Item] = ItemDatabase.get_items_by_type(profile.personality)
 	var available: Array[Item] = pool.filter(func(item: Item) -> bool:
-		return not profile.has_item(item.item_name))
+		return not profile.has_item(item))
 	if available.is_empty():
 		return null
 	return available.pick_random()
 
 func receive_item(item: Item) -> void:
-	profile.add_item(item.item_name)
+	profile.add_item(item)
 	GameData.save_profiles()
+	GameData.customer_queue.erase(self)
 	state = CustomerState.LEAVING

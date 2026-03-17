@@ -1,15 +1,5 @@
 res://Scenes/main_scene.tscn
-res://Customers/customer.tscn
-res://Customers/drop_area.gd
-res://Customers/customer.gd
-res://Scenes/inventory.tscn
+res://Items/Racquets/Fire Racquet.tres
+res://Scenes/ItemSlot/item_slot.gd
 res://Scenes/inventory.gd
-res://Player/Player.tscn
-res://Scenes/customer_drop_zone.gd
-res://Customers/customer_spawner.gd
-res://Data/CustomerProfile.gd
-res://Data/GameData.gd
-res://Customers/alex.tres
-res://Data/ItemDatabase.gd
-res://Customers/Grace/Grace.tres
-res://UI/coinbox.gd
+res://Items/Shoes/Star Shoes.tres

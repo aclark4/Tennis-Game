@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://bg6oklaeosicj"]
 
 [ext_resource type="Script" uid="uid://cu0h6465u0vlm" path="res://Scenes/inventory.gd" id="1_k5gp2"]
-[ext_resource type="Texture2D" uid="uid://df1q1x8eabq4l" path="res://Customers/Grace/Grace.png" id="2_c5ffv"]
 [ext_resource type="Texture2D" uid="uid://bs6g5nevc6cvy" path="res://Scenes/Inventory.png" id="2_k5gp2"]
 [ext_resource type="Script" uid="uid://drka1i07w0bmu" path="res://Scenes/customer_drop_zone.gd" id="3_sd8fj"]
 [ext_resource type="PackedScene" uid="uid://cyahp8rnw37ys" path="res://UI/coinbox.tscn" id="3_yxepq"]
@@ -22,7 +21,6 @@ script = ExtResource("1_k5gp2")
 [node name="Customer" type="Sprite2D" parent="." unique_id=166928733]
 position = Vector2(73, 54)
 scale = Vector2(3.5, 3.5)
-texture = ExtResource("2_c5ffv")
 hframes = 2
 vframes = 2
 

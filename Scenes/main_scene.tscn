@@ -32,7 +32,9 @@ func _process(delta: float) -> void:
 		GameData.player_position = player.position
 		if GameData.customer_queue.size() > 0:
 			var front = GameData.customer_queue[0]
-			if front.state == front.CustomerState.WAITING:
+			if not is_instance_valid(front):
+				GameData.customer_queue.erase(front)
+			elif front.state == front.CustomerState.WAITING:
 				front.state = front.CustomerState.BEING_SERVED
 		open_inventory()
 

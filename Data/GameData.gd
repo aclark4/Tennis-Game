@@ -7,7 +7,9 @@ var shop_balls: Array[Item] = []
 var shop_racquets: Array[Item] = []
 var shop_bags: Array[Item] = []
 var shop_shoes: Array[Item] = []
+
 var player_coins: int = 0
+var player_inventory: Array[Item] = []
 
 var customer_queue: Array[Customer] = [] # Reference to the active customers at the counter
 
@@ -22,8 +24,9 @@ func restock():
 	shop_shoes = ItemDatabase.Shoes.duplicate()
 
 func _ready():
-	restock()
 	load_profiles()
+	if player_inventory.is_empty():
+		player_inventory = ItemDatabase.all_items.duplicate()
 	
 func save_profiles() -> void:
 	var data = {}

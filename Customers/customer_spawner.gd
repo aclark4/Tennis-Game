@@ -12,6 +12,7 @@ extends Node
 
 var active_customers: int = 0
 var customer_pool: Array[CustomerProfile] = []
+var active_customer_ids: Array[String] = []
 
 
 func _ready() -> void:
@@ -31,14 +32,19 @@ func _schedule_next_spawn() -> void:
 	timer.start()
 	
 func _spawn_customer() ->void:
-	var customer = customer_scene.instantiate()
+	var available = customer_pool.filter(func(d): return not active_customer_ids.has(d.id))
+	if available.is_empty():
+		return
+		
+	var customer: Customer = customer_scene.instantiate()
 	customer.from_right = randi() % 2 == 0
 	customer.position = Vector2(340 if customer.from_right else -20, spawn_y)
 	customer.shop_x = get_queue_x(active_customers)
 	active_customers += 1
 	
-	var definition: CustomerProfile = customer_pool.pick_random()
+	var definition: CustomerProfile = available.pick_random()
 	var profile: CustomerProfile = GameData.get_or_create_profile(definition.id, definition.customer_name, definition.personality)
+	active_customer_ids.append(definition.id)
 	
 	customer.arrived.connect(func(): GameData.customer_queue.append(customer))
 	customer.left.connect(func():
@@ -46,10 +52,13 @@ func _spawn_customer() ->void:
 		_reshuffle_queue())
 	customer.tree_exited.connect(func(): active_customers -= 1)
 	get_parent().add_child(customer)
+	profile.sprite = definition.sprite
 	customer.setup(profile)
+	print(customer.name)
 	print("Spawning")
 	
 func _reshuffle_queue()-> void:
+	GameData.customer_queue = GameData.customer_queue.filter(func(c): return is_instance_valid(c))
 	for i in GameData.customer_queue.size():
 		var cust = GameData.customer_queue[i]
 		var new_x = get_queue_x(i)
@@ -75,5 +84,6 @@ func _load_customer_pool() -> void:
 			if ResourceLoader.exists(profile_path):
 				var profile = load(profile_path)
 				if profile is CustomerProfile:
+					print(profile.customer_name)
 					customer_pool.append(profile)
 		folder = dir.get_next()

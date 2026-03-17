@@ -16,7 +16,7 @@ var bag_racquet_sprite: Sprite2D = null
 
 func _ready():
 	item_panel.visible = false
-	# mouse_filter = Control.MOUSE_FILTER_STOP # This means the slot detects the mouse
+	# mouase_filter = Control.MOUSE_FILTER_STOP # This means the slot detects the mouse
 	# item_panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	# item_panel.get_node("MarginContainer").mouse_filter = Control.MOUSE_FILTER_IGNORE # The panel will not interfere
 	# item_panel.get_node("MarginContainer/Control").mouse_filter = Control.MOUSE_FILTER_IGNORE # The panel will not interfere
@@ -32,6 +32,7 @@ func _process(float):
 
 func setup(item: Item, slot_index: int = 0):
 	item_data = item
+	print(item.item_name)
 	sprite.texture = item.texture
 	var tex_size = Vector2(item.texture.get_width(), item.texture.get_height())
 	size = tex_size

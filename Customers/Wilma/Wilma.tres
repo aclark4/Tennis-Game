@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CustomerProfile" format=3 uid="uid://cyq2qg053o2kf"]
+
+[ext_resource type="Script" uid="uid://dst4rrdv56mpx" path="res://Data/CustomerProfile.gd" id="1_5rly2"]
+[ext_resource type="Texture2D" uid="uid://8a62uwex6cts" path="res://Customers/Wilma/Wilma.png" id="2_fpfui"]
+
+[resource]
+script = ExtResource("1_5rly2")
+id = "wilma"
+customer_name = "Wilma"
+personality = "Shoes"
+sprite = ExtResource("2_fpfui")
+metadata/_custom_type_script = "uid://dst4rrdv56mpx"
