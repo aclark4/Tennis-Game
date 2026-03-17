@@ -16,6 +16,7 @@ var customer_queue: Array[Customer] = [] # Reference to the active customers at 
 var customer_profiles: Dictionary = {} # id -> CustomerProfile
 
 signal coins_changed(new_amount: int)
+signal customer_arrived(customer: Customer)
 
 func restock():
 	shop_balls = ItemDatabase.Balls.duplicate()

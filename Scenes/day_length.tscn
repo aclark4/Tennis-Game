@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://bi5phfe1edmdq"]
+
+[node name="DayLength" type="Timer" unique_id=1727670037]

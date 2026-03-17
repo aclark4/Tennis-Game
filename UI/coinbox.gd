@@ -1,6 +1,7 @@
 extends HBoxContainer
 
-@onready var coins_label = $CoinAmount
+@onready var coins_label: Label = $CoinAmount
+@onready var sound_effect: AudioStreamPlayer = $SoundEffect
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -9,3 +10,4 @@ func _ready() -> void:
 
 func _update_coins(coins: int) -> void:
 	coins_label.text = str(coins)
+	sound_effect.play()

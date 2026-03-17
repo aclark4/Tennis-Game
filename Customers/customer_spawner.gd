@@ -21,14 +21,12 @@ func _ready() -> void:
 
 func _on_timer_timeout() -> void:
 	if active_customers < max_customers:
-		print("AHHHHH")
 		_spawn_customer()
 	_schedule_next_spawn()
 
 func _schedule_next_spawn() -> void:
-	print("Scheduling...")
 	timer.wait_time = randf_range(min_spawn_time, max_spawn_time)
-	print("Timer starting: Wait time is ", timer.wait_time)
+	# print("Timer starting: Wait time is ", timer.wait_time)
 	timer.start()
 	
 func _spawn_customer() ->void:
@@ -46,7 +44,11 @@ func _spawn_customer() ->void:
 	var profile: CustomerProfile = GameData.get_or_create_profile(definition.id, definition.customer_name, definition.personality)
 	active_customer_ids.append(definition.id)
 	
-	customer.arrived.connect(func(): GameData.customer_queue.append(customer))
+	customer.arrived.connect(func():
+		if not GameData.customer_queue.has(customer): # oly append if the customer isnt already in the queue(don't account for repositionings)
+			GameData.customer_queue.append(customer)
+			GameData.customer_arrived.emit(customer)
+	)
 	customer.left.connect(func():
 		GameData.customer_queue.erase(customer)
 		_reshuffle_queue())
@@ -54,8 +56,6 @@ func _spawn_customer() ->void:
 	get_parent().add_child(customer)
 	profile.sprite = definition.sprite
 	customer.setup(profile)
-	print(customer.name)
-	print("Spawning")
 	
 func _reshuffle_queue()-> void:
 	GameData.customer_queue = GameData.customer_queue.filter(func(c): return is_instance_valid(c))

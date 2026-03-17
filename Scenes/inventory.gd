@@ -3,7 +3,10 @@ extends Node2D
 const MAX_BALL_SLOTS: int = 6
 const MAX_RACQUET_SLOTS: int = 6
 const MAX_SHOE_SLOTS: int = 4
-const MAX_BAG_SLOTS: int = 4
+const MAX_BAG_SLOTS: int = 2
+const MAX_BIG_BAG_SLOTS: int = 1
+
+var item_slots: Array = []
 
 @onready var item_panel: Panel = $Panel
 @onready var name_label: Label = $Panel/VBoxContainer/NameLabel
@@ -27,7 +30,6 @@ func _ready() -> void:
 		serving_customer = GameData.customer_queue[0]
 		
 		if serving_customer.state == serving_customer.CustomerState.BEING_SERVED:
-			print("SERVED CURRENTLY")
 			customer_sprite.texture = serving_customer.profile.sprite
 			customer_sprite.hframes = 2
 			customer_sprite.vframes = 2
@@ -47,8 +49,8 @@ func _ready() -> void:
 
 	var item_slot_scene: PackedScene = preload("res://Scenes/ItemSlot/item_slot.tscn")
 
-	var counts = {"Balls": 0, "Racquets": 0, "Bags": 0, "Shoes": 0}
-	var limits = {"Balls": MAX_BALL_SLOTS, "Racquets": MAX_RACQUET_SLOTS, "Bags": MAX_BAG_SLOTS, "Shoes": MAX_SHOE_SLOTS}
+	var counts = {"Balls": 0, "Racquets": 0, "Bags": 0,"Big Bag": 0, "Shoes": 0}
+	var limits = {"Balls": MAX_BALL_SLOTS, "Racquets": MAX_RACQUET_SLOTS, "Bags": MAX_BAG_SLOTS, "Big Bag": MAX_BIG_BAG_SLOTS, "Shoes": MAX_SHOE_SLOTS}
 
 	for item in GameData.player_inventory:
 		var t = item.item_type
@@ -62,8 +64,10 @@ func _ready() -> void:
 			"Balls":    slot.position = Vector2(40 + i * 25, 85)
 			"Racquets": slot.position = Vector2(208 + (i % 3) * 36, 95 + (i / 3) * 55)
 			"Bags":     slot.position = Vector2(50 + i * 40, 152)
+			"Big Bag": slot.position = Vector2(150, 152)
 			"Shoes":    slot.position = Vector2(45 + i * 40, 114)
 		add_child(slot)
+		item_slots.append(slot) # Adds that item slot to the inventory (so it can be tracked and removed
 		slot.setup(item, i)
 		slot.position -= slot.size / 2.0
 		counts[t] += 1
@@ -71,14 +75,32 @@ func _ready() -> void:
 	if GameData.customer_queue.size() > 0: # This means there is a customer waiting
 		currently_selling = true
 		if serving_customer.state == serving_customer.CustomerState.BEING_SERVED:
-			print("SERVED CURRENTLY: SHOW SPRITE")
 			customer_sprite.frame = 0
 			customer_sprite.visible = true
 		else:
 			customer_sprite.visible = false
+	GameData.customer_arrived.connect(_on_new_customer_arrived)
+		
+func _on_new_customer_arrived(customer: Customer) -> void:
+	if currently_selling:
+		return
+	serving_customer = customer
+	serving_customer.state = serving_customer.CustomerState.BEING_SERVED
+	customer_drop_zone.active = true
+	currently_selling = true
+	customer_sprite.texture = serving_customer.profile.sprite
+	customer_sprite.hframes = 2
+	customer_sprite.vframes = 2
+	customer_sprite.frame = 0
+	customer_sprite.visible = true
 
 func _process(delta: float) -> void:
-	if Input.is_action_just_pressed("Interact") and !currently_selling:
+	if Input.is_action_just_pressed("Interact"): # and (!currently_selling or GameData.player_inventory.is_empty()):
+		if serving_customer != null:
+			serving_customer.state = serving_customer.CustomerState.WAITING
+			serving_customer.indicator.visible = true
+			serving_customer = null
+			currently_selling = false
 		emit_signal("closed")
 		queue_free()
 
@@ -88,7 +110,24 @@ func _on_item_received(item: Item) -> void:
 	GameData.add_coins(item.price)
 	serving_customer.receive_item(item)
 	item_sold.emit(item)
-	currently_selling = false
-	closed.emit()
+	
+	GameData.player_inventory.erase(item)
+	for slot in item_slots:
+		if is_instance_valid(slot) and slot.item_data == item: # This will trigger if the item that was just sold is inside of this slot
+			slot.queue_free()
+			item_slots.erase(slot)
+			break
+	
 	customer_sprite.frame = 2
-	queue_free()
+	
+	# Reset the selling state, before deciding what happens next (check for a new customer)
+	currently_selling = false
+	serving_customer = null
+	
+	if GameData.customer_queue.size() > 0:
+		serving_customer = GameData.customer_queue[0]
+		_on_new_customer_arrived(serving_customer)
+		print("New customer: ", serving_customer.profile.customer_name)
+	else:
+		customer_sprite.visible = false
+		customer_drop_zone.active = false

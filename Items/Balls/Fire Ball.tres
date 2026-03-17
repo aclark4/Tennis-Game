@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://dw4ddxift31va"]
+
+[ext_resource type="Script" uid="uid://b1rfovj0wxec2" path="res://Data/Item.gd" id="1_4f8vf"]
+[ext_resource type="Texture2D" uid="uid://djojfvmrhjai4" path="res://textures/Items/Balls/Fire Ball.png" id="2_4f8vf"]
+
+[resource]
+script = ExtResource("1_4f8vf")
+item_name = "Fire Ball"
+item_type = "Balls"
+price = 8
+description = "A firey hot ball"
+texture = ExtResource("2_4f8vf")
+metadata/_custom_type_script = "uid://b1rfovj0wxec2"

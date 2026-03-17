@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://cyahp8rnw37ys"]
 
-[ext_resource type="Texture2D" uid="uid://ce2u8mhm6jcsh" path="res://Items/Coin.png" id="1_2n54g"]
+[ext_resource type="Texture2D" uid="uid://ce2u8mhm6jcsh" path="res://UI/Coin.png" id="1_2n54g"]
 [ext_resource type="FontFile" uid="uid://cb4jctb12u184" path="res://textures/classic font.ttf" id="2_dw43w"]
+[ext_resource type="AudioStream" uid="uid://snk7i3cliudc" path="res://Audio/Sound Effects/Sale Made.ogg" id="3_dw43w"]
 
 [node name="CoinHBox" type="HBoxContainer" unique_id=3592410]
 offset_left = 2.0
@@ -28,3 +29,6 @@ theme_override_constants/shadow_outline_size = 1
 theme_override_fonts/font = ExtResource("2_dw43w")
 text = "12"
 vertical_alignment = 1
+
+[node name="SoundEffect" type="AudioStreamPlayer" parent="." unique_id=1897850357]
+stream = ExtResource("3_dw43w")

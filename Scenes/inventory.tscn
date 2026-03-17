@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://bg6oklaeosicj"]
 
 [ext_resource type="Script" uid="uid://cu0h6465u0vlm" path="res://Scenes/inventory.gd" id="1_k5gp2"]
-[ext_resource type="Texture2D" uid="uid://bs6g5nevc6cvy" path="res://Scenes/Inventory.png" id="2_k5gp2"]
+[ext_resource type="Texture2D" uid="uid://bs6g5nevc6cvy" path="res://textures/Scenes/Inventory.png" id="2_c5ffv"]
 [ext_resource type="Script" uid="uid://drka1i07w0bmu" path="res://Scenes/customer_drop_zone.gd" id="3_sd8fj"]
 [ext_resource type="PackedScene" uid="uid://cyahp8rnw37ys" path="res://UI/coinbox.tscn" id="3_yxepq"]
 [ext_resource type="Script" uid="uid://1t0wbtqtnn24" path="res://UI/coinbox.gd" id="4_0n8tc"]
-[ext_resource type="Texture2D" uid="uid://clsrdso52fgu4" path="res://Scenes/Shelf.png" id="6_sd8fj"]
+[ext_resource type="Texture2D" uid="uid://clsrdso52fgu4" path="res://textures/Scenes/Shelf.png" id="5_c5ffv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k5gp2"]
 bg_color = Color(0.64321274, 0.54479486, 0.4590299, 1)
@@ -26,7 +26,7 @@ vframes = 2
 
 [node name="Background" type="Sprite2D" parent="." unique_id=144554256]
 z_index = -1
-texture = ExtResource("2_k5gp2")
+texture = ExtResource("2_c5ffv")
 centered = false
 metadata/_edit_lock_ = true
 
@@ -62,7 +62,7 @@ metadata/_edit_lock_ = true
 
 [node name="Shelf" type="Sprite2D" parent="." unique_id=1153710213]
 position = Vector2(161, 121)
-texture = ExtResource("6_sd8fj")
+texture = ExtResource("5_c5ffv")
 metadata/_edit_lock_ = true
 
 [node name="CustomerDropZone" type="Control" parent="." unique_id=869513363]

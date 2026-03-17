@@ -1,6 +1,7 @@
 [gd_resource type="Resource" script_class="CustomerProfile" format=3 uid="uid://cyq2qg053o2kf"]
 
 [ext_resource type="Script" uid="uid://dst4rrdv56mpx" path="res://Data/CustomerProfile.gd" id="1_5rly2"]
+[ext_resource type="Script" uid="uid://b1rfovj0wxec2" path="res://Data/Item.gd" id="1_rfwf7"]
 [ext_resource type="Texture2D" uid="uid://8a62uwex6cts" path="res://Customers/Wilma/Wilma.png" id="2_fpfui"]
 
 [resource]

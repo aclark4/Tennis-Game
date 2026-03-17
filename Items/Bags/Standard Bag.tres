@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://binabkajd0byg"]
+
+[ext_resource type="Script" uid="uid://b1rfovj0wxec2" path="res://Data/Item.gd" id="1_s006v"]
+[ext_resource type="Texture2D" uid="uid://ce7idy4hmuhjj" path="res://textures/Items/Bags/Standard Bag.png" id="2_s006v"]
+
+[resource]
+script = ExtResource("1_s006v")
+item_name = "Stanard Bag"
+item_type = "Bags"
+price = 75
+description = "A standard tennis bag"
+texture = ExtResource("2_s006v")
+metadata/_custom_type_script = "uid://b1rfovj0wxec2"

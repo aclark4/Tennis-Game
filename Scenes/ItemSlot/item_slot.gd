@@ -32,7 +32,6 @@ func _process(float):
 
 func setup(item: Item, slot_index: int = 0):
 	item_data = item
-	print(item.item_name)
 	sprite.texture = item.texture
 	var tex_size = Vector2(item.texture.get_width(), item.texture.get_height())
 	size = tex_size
@@ -40,16 +39,16 @@ func setup(item: Item, slot_index: int = 0):
 	sprite.position = tex_size / 2.0
 	
 	if item_data.item_type == "Bags":
-		var racquet = ItemDatabase.Racquets[slot_index]
+		var racquet: Item = ItemDatabase.get_items_by_type("Racquets")[0]
 		bag_racquet_sprite = Sprite2D.new()
 		bag_racquet_sprite.texture = racquet.texture
 		bag_racquet_sprite.position = tex_size / 2.0
 		bag_racquet_sprite.flip_v = true
 		
 		if item_data.detail == "Tote":
-			print("HERE")
 			bag_racquet_sprite.rotation_degrees = -45
 			bag_racquet_sprite.position.x -= 8
+			
 		add_child(bag_racquet_sprite)
 		move_child(bag_racquet_sprite, 0)
 
