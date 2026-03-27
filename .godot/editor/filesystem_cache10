@@ -1,20 +1,20 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1774631429
+::res://::1774635072
 Game_Development_Roadmap.md::TextFile::-1::1773423295::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::2615730773902464914::1773423088::1773424425::1::::<><><>0<>0<>61b78ea4eac68a2b90f0f7b960955957<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://Audio/::1773773086
 ::res://Audio/Sound Effects/::1773773086
 Sale Made.ogg::AudioStreamOggVorbis::1290900875167214312::1773773086::1773773086::1::::<><><>0<>0<>2b66e9432beed3c7e3585baff11509fc<>res://.godot/imported/Sale Made.ogg-b4e6837483b77f350086af3dcb50fd2b.oggvorbisstr::
-::res://Customers/::1774631737
+::res://Customers/::1774635865
 Big girl 2.png::CompressedTexture2D::7727163679006829239::1773773086::1773773086::1::::<><><>0<>0<>94d677482217afb7daf01d735d9c04da<>res://.godot/imported/Big girl 2.png-fe276a86c1708077f26aabfb9ec91af7.ctex::
 boy  customer 2.png::CompressedTexture2D::300114213635666138::1773773086::1773773086::1::::<><><>0<>0<>281e1e15731bbb1c5a7e715911bb419b<>res://.godot/imported/boy  customer 2.png-026340cee3cd1cfcd748a38346bed5f5.ctex::
 boy  customer.png::CompressedTexture2D::2786509111970277984::1773773086::1773773086::1::::<><><>0<>0<>9be68f3d87bed5ec3226abae58dc8282<>res://.godot/imported/boy  customer.png-19ba8a989fbe87dc7f4f3df8285deb5b.ctex::
 Checkered skirt.png::CompressedTexture2D::1365321820889604977::1773773086::1773773086::1::::<><><>0<>0<>4f0be0aed299bb7872a229ec433ea259<>res://.godot/imported/Checkered skirt.png-6095fbd8411d38ec1a8425d14317d472.ctex::
 Customer rob.png::CompressedTexture2D::144438749430157386::1773773086::1773773086::1::::<><><>0<>0<>ef7a6ed0468d2104bbc45ddfe93de3ad<>res://.godot/imported/Customer rob.png-c24a5033bf4fddd2738ca2f32dc9028f.ctex::
-customer.gd::GDScript::6351663781391025737::1773858883::0::1::::Customer<>CharacterBody2D<><>0<>0<><>::
-customer.tscn::PackedScene::6814233013317651816::1773859168::0::1::::<><><>0<>0<><>::uid://cwq18erl3cdj2::::res://Customers/customer.gd<>uid://ci4pup2s6i6u7::::res://Customers/Indicator.png<>uid://bp0ri7arf6u7o::::res://Customers/Impatient.png
-customer_spawner.gd::GDScript::7178733828657814722::1774631737::0::1::::<>Node<><>0<>0<><>::
-customer_spawner.tscn::PackedScene::8089054737896365962::1773702046::0::1::::<><><>0<>0<><>::uid://dajoxyd6wshtq::::res://Customers/customer_spawner.gd
+customer.gd::GDScript::6351663781391025737::1774635369::0::1::::Customer<>CharacterBody2D<><>0<>0<><>::
+customer.tscn::PackedScene::6814233013317651816::1774635865::0::1::::<><><>0<>0<><>::uid://cwq18erl3cdj2::::res://Customers/customer.gd<>uid://ci4pup2s6i6u7::::res://Customers/Indicator.png<>uid://bp0ri7arf6u7o::::res://Customers/Impatient.png
+customer_spawner.gd::GDScript::7178733828657814722::1774635369::0::1::::<>Node<><>0<>0<><>::
+customer_spawner.tscn::PackedScene::8089054737896365962::1774633060::0::1::::<><><>0<>0<><>::uid://dajoxyd6wshtq::::res://Customers/customer_spawner.gd
 girl customer short.png::CompressedTexture2D::2397364027198798479::1773773086::1773773086::1::::<><><>0<>0<>ea2cdfb25ed170d1aa5e0f90970384c9<>res://.godot/imported/girl customer short.png-32ff08aca79179cd627d941f742d28d8.ctex::
 Girl with bun 2.png::CompressedTexture2D::1207453124451377735::1773773086::1773773086::1::::<><><>0<>0<>de5684b49090a603636cbc8237ad8769<>res://.godot/imported/Girl with bun 2.png-85e9e6634f377237659e63af7872bc3e.ctex::
 Girl with pony.png::CompressedTexture2D::1150016265565350771::1773773086::1773773086::1::::<><><>0<>0<>12e3986d5661d290408503f195390a74<>res://.godot/imported/Girl with pony.png-1e7813c3766a4c0aaa3ea6b6489bb555.ctex::
@@ -77,20 +77,21 @@ Nike Dunks.tres::Resource/Item::5342438122036355514::1773773831::0::1::::<><><>0
 Speed.tres::Resource/Item::3148374705334666581::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://0x5huimtowgk::::res://textures/Items/Shoes/Speed Shoes.png
 Standard Shoes.tres::Resource/Item::4115949636673461588::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://bku4gv8coymu3::::res://textures/Items/Shoes/Standard Shoes.png
 Star Shoes.tres::Resource/Item::3716365111601982224::1773773086::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://cdggv7mymorvv::::res://Items/Shoes/Star Shoes.png
-::res://Player/::1773773086
+::res://Player/::1774636027
 boy_player.png::CompressedTexture2D::5257220253949811479::1773508884::1773510610::1::::<><><>0<>0<>2525ae97a6bd6674f63ad2f034980413<>res://.godot/imported/boy_player.png-ae911239be54ef3df2f69dfe05e2293f.ctex::
 girl_player.png::CompressedTexture2D::6110988917771285375::1773508887::1773510610::1::::<><><>0<>0<>0af4efe98c5042fa7f091fc508b15234<>res://.godot/imported/girl_player.png-b77e002964ef86ba3bca8609163a8b67.ctex::
-player.gd::GDScript::4343203242210705003::1773512893::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.gd::GDScript::4343203242210705003::1774636027::0::1::::<>CharacterBody2D<><>0<>0<><>::
 Player.png::CompressedTexture2D::1101563064288824551::1773430040::1773510610::1::::<><><>0<>0<>c51c0fd6517f5b1effffce17589209c6<>res://.godot/imported/Player.png-3d0801c65bdfc563657cfa304115f1c7.ctex::
 Player.tscn::PackedScene::732834137225991295::1773773086::0::1::::<><><>0<>0<><>::uid://b2446m2wydw80::::res://Player/player.gd<>uid://ctchdhoc6gtrr::::res://Player/girl_player.png
-::res://Scenes/::1774632098
+::res://Scenes/::1774636483
 customer_drop_zone.gd::GDScript::8373163061399207448::1773773086::0::1::::<>Control<><>0<>0<><>::
 day_length.tscn::PackedScene::3010786290850751294::1773773086::0::1::::<><><>0<>0<><>::
 inventory.gd::GDScript::6228709635015648990::1773773086::0::1::::<>Node2D<><>0<>0<><>::
 inventory.tscn::PackedScene::2872417929692946653::1773773086::0::1::::<><><>0<>0<><>::uid://cu0h6465u0vlm::::res://Scenes/inventory.gd<>uid://bs6g5nevc6cvy::::res://textures/Scenes/Inventory.png<>uid://drka1i07w0bmu::::res://Scenes/customer_drop_zone.gd<>uid://cyahp8rnw37ys::::res://UI/coinbox.tscn<>uid://1t0wbtqtnn24::::res://UI/coinbox.gd<>uid://clsrdso52fgu4::::res://textures/Scenes/Shelf.png
 main_scene.gd::GDScript::579458656997647679::1773432565::0::1::::<>Node2D<><>0<>0<><>::
-main_scene.tscn::PackedScene::3491477060380866919::1774632098::0::1::::<><><>0<>0<><>::uid://be8yravqxxg8x::::res://textures/Scenes/ParkScene.png<>uid://bqvyyjvp65ppt::::res://textures/Scenes/ParkShop.png<>uid://ko8w24y58i60::::res://Player/Player.tscn<>uid://cyahp8rnw37ys::::res://UI/coinbox.tscn<>uid://1t0wbtqtnn24::::res://UI/coinbox.gd<>uid://dninsxpx41bju::::res://Customers/customer_spawner.tscn<>uid://c4c4omaqgh34g::::res://Customers/customer.tscn<>uid://cb4jctb12u184::::res://textures/classic font.ttf
-night_time.tscn::PackedScene::6987191057423962580::1774632098::0::1::::<><><>0<>0<><>::
+main_scene.tscn::PackedScene::3491477060380866919::1774636175::0::1::::<><><>0<>0<><>::uid://be8yravqxxg8x::::res://textures/Scenes/ParkScene.png<>uid://bqvyyjvp65ppt::::res://textures/Scenes/ParkShop.png<>uid://ko8w24y58i60::::res://Player/Player.tscn<>uid://cyahp8rnw37ys::::res://UI/coinbox.tscn<>uid://1t0wbtqtnn24::::res://UI/coinbox.gd<>uid://dninsxpx41bju::::res://Customers/customer_spawner.tscn<>uid://c4c4omaqgh34g::::res://Customers/customer.tscn<>uid://cb4jctb12u184::::res://textures/classic font.ttf
+night_time.tscn::PackedScene::6987191057423962580::1774636483::0::1::::<><><>0<>0<><>::uid://84su8ckpwgq1::::res://textures/Scenes/NightTime.png<>uid://dja25hl231d3s::::res://Scenes/night_time.gd<>uid://bqvyyjvp65ppt::::res://textures/Scenes/ParkShop.png<>uid://ko8w24y58i60::::res://Player/Player.tscn<>uid://cyahp8rnw37ys::::res://UI/coinbox.tscn<>uid://1t0wbtqtnn24::::res://UI/coinbox.gd<>uid://cb4jctb12u184::::res://textures/classic font.ttf
+night_time.gd::GDScript::7792654962364935814::1774636423::0::1::::<>Node2D<><>0<>0<><>::
 ::res://Scenes/ItemSlot/::1773773086
 item_slot.gd::GDScript::2024732936033239676::1773773086::0::1::::<>Control<><>0<>0<><>::
 item_slot.tscn::PackedScene::4924747748640787243::1773773086::0::1::::<><><>0<>0<><>::uid://332b5k31oveq::::res://Scenes/ItemSlot/item_slot.gd<>uid://ibhp47dpyx2h::::res://textures/HoverBox.png<>uid://cb4jctb12u184::::res://textures/classic font.ttf
@@ -140,17 +141,20 @@ Nike Dunks.png::CompressedTexture2D::1588082302733858942::1773773086::1773773086
 Speed Shoes.png::CompressedTexture2D::1804036853031142222::1773773086::1773773086::1::::<><><>0<>0<>8812352fdc34f1c2a9bfb6b65cf4ecdf<>res://.godot/imported/Speed Shoes.png-9c0c13cf374fbd5b02e78f1dd32f4374.ctex::
 Standard Shoes.png::CompressedTexture2D::3131369336787713428::1773773086::1773773086::1::::<><><>0<>0<>844254fc924e3888902de96a0b521d0a<>res://.godot/imported/Standard Shoes.png-59c07f7c97996d84f201b208d6f96a9e.ctex::
 Star Shoes.png::CompressedTexture2D::4996197668845173971::1773773086::1773773086::1::::<><><>0<>0<>c549c41a140e143e3918e74c51428b61<>res://.godot/imported/Star Shoes.png-160cfcd7cd95078033c2f83f77713997.ctex::
-::res://textures/Scenes/::1774632419
+::res://textures/Scenes/::1774636886
 Inventory.png::CompressedTexture2D::3714234145268090274::1773773086::1773773086::1::::<><><>0<>0<>d10236efe6a7745ac0c4e9cc5d43a23f<>res://.godot/imported/Inventory.png-53916564afd1a0b830a8d7981e641688.ctex::
 InventoryOld.png::CompressedTexture2D::4488355433021343793::1773773086::1773773086::1::::<><><>0<>0<>34630e8f7509e4b200e28850577d521b<>res://.godot/imported/InventoryOld.png-3daf939c6763a063b20babcaed0ce3cd.ctex::
 MainSceneOld.png::CompressedTexture2D::8322801313048547921::1773773086::1773773086::1::::<><><>0<>0<>8c884723e0942673c43ac8a5b65a006b<>res://.godot/imported/MainSceneOld.png-014d90981599f419ca2e604674a772ca.ctex::
 NightTime.png::CompressedTexture2D::2377229153506131506::1774632418::1774632419::1::::<><><>0<>0<>0cb674302726e12c2b4c8e87e6d7c598<>res://.godot/imported/NightTime.png-40ffcfd0b70eb0d5fed8198500c32623.ctex::
+NightTimeLevel.png::CompressedTexture2D::5079435403801836802::1774636772::1774636887::1::::<><><>0<>0<>3f1408e17546385dc59ca7a5ee349079<>res://.godot/imported/NightTimeLevel.png-464ceea9e56c2398176533a1cf316d26.ctex::
 ParkScene.png::CompressedTexture2D::2736788123651488889::1774632466::1774632467::1::::<><><>0<>0<>4048debc87f8cfcb8539bccb2869d129<>res://.godot/imported/ParkScene.png-91f1d9cbbdeea310b3b05703214de552.ctex::
 ParkShop.png::CompressedTexture2D::3554294687492185933::1773773086::1773773086::1::::<><><>0<>0<>d847fe95ea98c933f322595cbb621a17<>res://.godot/imported/ParkShop.png-30b036e18e2e630fa716e521da607d15.ctex::
 pop up box.png::CompressedTexture2D::1837929461272544258::1773773086::1773773086::1::::<><><>0<>0<>c39e0b0f43b69e37b397f595ce3ff021<>res://.godot/imported/pop up box.png-3558872b2b26561d588372fe39da8c2a.ctex::
 Shelf.png::CompressedTexture2D::5583115961683291253::1773773086::1773773086::1::::<><><>0<>0<>caad70399d97b23b67f54f40ad08a93d<>res://.godot/imported/Shelf.png-690e535b25d3d36afd213a9c8d6e7359.ctex::
 Shop.png::CompressedTexture2D::6205949507590182212::1773773086::1773773086::1::::<><><>0<>0<>9ebac3d2696a7069b8bafd11914908cc<>res://.godot/imported/Shop.png-eff2d9c5ff0b2bcb2d1aaaab93696f50.ctex::
-::res://UI/::1773773086
+::res://UI/::1774635766
 Coin.png::CompressedTexture2D::5110608854032977259::1773773086::1773773086::1::::<><><>0<>0<>0539cb4c51dcf2fc9e01636ac9aeb133<>res://.godot/imported/Coin.png-32ae862c6f9fb054bc3adbc5cd7e42fc.ctex::
 coinbox.gd::GDScript::1865690406828565183::1773773086::0::1::::<>HBoxContainer<><>0<>0<><>::
 coinbox.tscn::PackedScene::6457827180710346082::1773773086::0::1::::<><><>0<>0<><>::uid://ce2u8mhm6jcsh::::res://UI/Coin.png<>uid://cb4jctb12u184::::res://textures/classic font.ttf<>uid://snk7i3cliudc::::res://Audio/Sound Effects/Sale Made.ogg
+scene_transition.gd::GDScript::1388267030947509406::1774635187::0::1::::<>CanvasLayer<><>0<>0<><>::
+scene_transition.tscn::PackedScene::7897871825604122088::1774635766::0::1::::<><><>0<>0<><>::uid://t1qs41pp4c0m::::res://UI/scene_transition.gd

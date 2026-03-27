@@ -8,3 +8,4 @@ res://UI/scene_transition.gd
 res://Customers/customer.gd
 res://Customers/customer.tscn
 res://Player/player.gd
+res://Player/Player.tscn

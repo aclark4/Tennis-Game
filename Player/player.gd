@@ -38,5 +38,5 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_night_time_make_player_platformer() -> void:
-	movement_speed = 90
+	movement_speed = 300
 	jump_velo = -200

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c6swasl6rlqpo"]
 
-[ext_resource type="Texture2D" uid="uid://84su8ckpwgq1" path="res://textures/Scenes/NightTime.png" id="1_00hkv"]
 [ext_resource type="Script" uid="uid://dja25hl231d3s" path="res://Scenes/night_time.gd" id="1_fp5n8"]
+[ext_resource type="Texture2D" uid="uid://cemrtagm4tldi" path="res://textures/Scenes/NightTimeLevel.png" id="2_fp5n8"]
 [ext_resource type="Texture2D" uid="uid://bqvyyjvp65ppt" path="res://textures/Scenes/ParkShop.png" id="2_qk3c1"]
 [ext_resource type="PackedScene" uid="uid://ko8w24y58i60" path="res://Player/Player.tscn" id="3_uqs4c"]
 [ext_resource type="PackedScene" uid="uid://cyahp8rnw37ys" path="res://UI/coinbox.tscn" id="4_suwca"]
@@ -11,7 +11,13 @@
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_suwca"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s138x"]
-size = Vector2(556, 43)
+size = Vector2(20, 180)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u2oi0"]
+size = Vector2(62, 37)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tlpeg"]
+size = Vector2(3200, 43)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fp5n8"]
 size = Vector2(77, 15)
@@ -19,10 +25,30 @@ size = Vector2(77, 15)
 [node name="NightTime" type="Node2D" unique_id=1080630435]
 script = ExtResource("1_fp5n8")
 
+[node name="PlayerSideBoundaryRight" type="StaticBody2D" parent="." unique_id=613131133]
+collision_layer = 7
+collision_mask = 0
+physics_material_override = SubResource("PhysicsMaterial_suwca")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerSideBoundaryRight" unique_id=1840228570]
+position = Vector2(3210, 90)
+shape = SubResource("RectangleShape2D_s138x")
+debug_color = Color(0, 0, 0, 0.84313726)
+
 [node name="Background" type="Sprite2D" parent="." unique_id=412171909]
-texture = ExtResource("1_00hkv")
+texture = ExtResource("2_fp5n8")
 centered = false
 metadata/_edit_lock_ = true
+
+[node name="Area2D" type="Area2D" parent="Background" unique_id=324797771]
+z_index = 1
+position = Vector2(3100, 120)
+collision_layer = 2
+collision_mask = 0
+input_pickable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Area2D" unique_id=466327118]
+shape = SubResource("RectangleShape2D_u2oi0")
 
 [node name="Shop" type="Sprite2D" parent="." unique_id=787266793]
 z_index = 1
@@ -30,18 +56,14 @@ position = Vector2(30, 87)
 texture = ExtResource("2_qk3c1")
 centered = false
 
-[node name="Player" parent="." unique_id=1424993457 instance=ExtResource("3_uqs4c")]
-position = Vector2(147, 137)
-
 [node name="Player Ground" type="StaticBody2D" parent="." unique_id=106237982]
-visible = false
 collision_layer = 7
 collision_mask = 0
 physics_material_override = SubResource("PhysicsMaterial_suwca")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player Ground" unique_id=1525851902]
-position = Vector2(161, 172.5)
-shape = SubResource("RectangleShape2D_s138x")
+[node name="FloorCollision" type="CollisionShape2D" parent="Player Ground" unique_id=1721511674]
+position = Vector2(1600, 172.5)
+shape = SubResource("RectangleShape2D_tlpeg")
 
 [node name="CounterZone" type="Area2D" parent="." unique_id=129444584]
 collision_layer = 0
@@ -51,17 +73,43 @@ collision_mask = 2
 position = Vector2(68.5, 143.5)
 shape = SubResource("RectangleShape2D_fp5n8")
 
-[node name="CoinHBox" parent="." unique_id=3592410 instance=ExtResource("4_suwca")]
+[node name="Player" parent="." unique_id=1424993457 instance=ExtResource("3_uqs4c")]
+position = Vector2(147, 137)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=785552885]
+position = Vector2(-147, -137)
+anchor_mode = 0
+limit_left = 0
+limit_top = 0
+limit_right = 3200
+limit_smoothed = true
+
+[node name="CoinBoxLocation" type="CanvasLayer" parent="." unique_id=601637271]
+
+[node name="CoinHBox" parent="CoinBoxLocation" unique_id=3592410 instance=ExtResource("4_suwca")]
 script = ExtResource("5_s138x")
 
-[node name="NextDayButton" type="Button" parent="." unique_id=364876529]
+[node name="NextDayButton" type="CanvasLayer" parent="." unique_id=1052604272]
+
+[node name="NextDayButton" type="Button" parent="NextDayButton" unique_id=364876529]
 offset_left = 128.0
 offset_top = 20.0
-offset_right = 192.0
+offset_right = 193.0
 offset_bottom = 43.0
 theme_override_fonts/font = ExtResource("7_u2oi0")
 theme_override_font_sizes/font_size = 16
 text = "NEW DAY"
 
+[node name="PlayerSideBoundary" type="StaticBody2D" parent="." unique_id=464602188]
+collision_layer = 7
+collision_mask = 0
+physics_material_override = SubResource("PhysicsMaterial_suwca")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerSideBoundary" unique_id=465174126]
+position = Vector2(-10, 90)
+shape = SubResource("RectangleShape2D_s138x")
+debug_color = Color(0, 0, 0, 0.84313726)
+
 [connection signal="make_player_platformer" from="." to="Player" method="_on_night_time_make_player_platformer"]
-[connection signal="pressed" from="NextDayButton" to="." method="_on_end_day_button_pressed"]
+[connection signal="area_entered" from="Background/Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="pressed" from="NextDayButton/NextDayButton" to="." method="_on_next_day_button_pressed"]
