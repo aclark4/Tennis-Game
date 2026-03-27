@@ -19,7 +19,9 @@ signal left
 
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var indicator: Sprite2D = $Indicator
+@onready var impatient: Sprite2D = $Impatient
 @onready var walkTimer: Timer = $WalkTimer
+@onready var waitTimer: Timer = $WaitTimer
 
 @export var from_right: bool
 
@@ -34,6 +36,7 @@ func _ready() -> void:
 	if from_right: spawn_direction = 1 
 	else: spawn_direction = -1
 	indicator.visible = false
+	impatient.visible = false
 	
 func setup(p: CustomerProfile) -> void:
 	profile = p
@@ -43,6 +46,7 @@ func setup(p: CustomerProfile) -> void:
 		sprite.texture = profile.sprite
 		sprite.hframes = 2
 		sprite.vframes = 2
+	waitTimer.wait_time = profile.impatient_time
 	wanted_item = _pick_wanted_item()
 	
 func _physics_process(delta: float) -> void:
@@ -69,16 +73,22 @@ func _physics_process(delta: float) -> void:
 		CustomerState.WAITING:
 			sprite.frame = 1 # Face the shop
 			velocity.x = 0
-			indicator.position.y = -27 + sin(Time.get_ticks_msec() * 0.005) * 2.0
-			
+			if waitTimer.time_left > 5:
+				indicator.position.y = -27 + sin(Time.get_ticks_msec() * 0.005) * 2.0
+			else:
+				impatient.visible = true
+				indicator.visible = false
+				impatient.position.y = -27 + sin(Time.get_ticks_msec() * 0.005) * 2.0
+		
 		CustomerState.BEING_SERVED:
 			sprite.frame = 0
 			velocity.x = 0
 			indicator.visible = false
+			impatient.visible = false
+			
 			
 		CustomerState.LEAVING:
 			if position.x > 340 or position.x < -20:
-				print("leaving now")
 				left.emit()
 				queue_free()
 			else:
@@ -94,6 +104,7 @@ func _physics_process(delta: float) -> void:
 
 func _arrive() -> void:
 	state = CustomerState.WAITING
+	waitTimer.start()
 	indicator.visible = true
 	arrived.emit() 
 
@@ -102,7 +113,7 @@ func reposition(new_x: float) -> void:
 	state = CustomerState.WALKING
 	indicator.visible = false
 	
-func _pick_wanted_item() -> Item:
+func _pick_wanted_item() -> Item: # This does not work properly quite yet
 	var pool: Array[Item] = ItemDatabase.get_items_by_type(profile.personality)
 	var available: Array[Item] = pool.filter(func(item: Item) -> bool:
 		return not profile.has_item(item))
@@ -111,7 +122,13 @@ func _pick_wanted_item() -> Item:
 	return available.pick_random()
 
 func receive_item(item: Item) -> void:
-	profile.add_item(item)
+	profile.add_item(item) 
 	GameData.save_profiles()
 	GameData.customer_queue.erase(self)
+	indicator.visible = false
+	state = CustomerState.LEAVING
+
+func _on_wait_timer_timeout() -> void:
+	print("Took too long!")
+	impatient.visible = false
 	state = CustomerState.LEAVING

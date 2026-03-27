@@ -1,41 +1,10 @@
 res://Scenes/main_scene.tscn
 res://Customers/customer_spawner.gd
-res://Items/Balls/Standard Ball.tres
-res://Items/Balls/Blue Ball.tres
-res://Items/Balls/Slow Ball.tres
-res://Items/Balls/Rainbow Ball.tres
-res://Items/Balls/Pink Ball.tres
-res://Items/Balls/Flower Ball.tres
-res://Items/Balls/Fire Ball.tres
-res://Items/Balls/Creeper Ball.tres
-res://Items/Racquets/Blue-Green Racquet.tres
-res://Items/Racquets/Lake Racquet.tres
-res://Items/Racquets/Creeper Racquet.tres
-res://Items/Racquets/Ice Cream Racquet.tres
-res://Items/Racquets/Ice Racquet.tres
-res://Items/Racquets/Rainbow Racquet.tres
-res://Items/Racquets/Standard Racquet.tres
-res://Items/Racquets/Fire Racquet.tres
-res://Scenes/ItemSlot/item_slot.tscn
-res://Items/Bags/Blue Tote Bag.tres
-res://Scenes/ItemSlot/item_slot.gd
-res://Items/Bags/Flower Big Bag.tres
-res://Items/Bags/Checkered Bag.tres
-res://Items/Bags/Matcha Bag.tres
-res://Items/Bags/Pink Tote.tres
-res://Items/Bags/Purple Ombre.tres
-res://Items/Bags/Standard Bag.tres
-res://Items/Bags/Tennis Tote.tres
-res://Scenes/inventory.gd
-res://Items/Shoes/Galaxy Shoes.tres
-res://Items/Shoes/Nike Dunks.tres
-res://Items/Shoes/Speed.tres
-res://Items/Shoes/Standard Shoes.tres
-res://Data/GameData.gd
-res://Scenes/customer_drop_zone.gd
+res://Scenes/night_time.tscn
+res://Customers/customer_spawner.tscn
+res://Scenes/night_time.gd
+res://UI/scene_transition.tscn
+res://UI/scene_transition.gd
+res://Customers/customer.gd
 res://Customers/customer.tscn
-res://Customers/Alice/Alice.tres
-res://UI/coinbox.tscn
-res://UI/coinbox.gd
-res://Scenes/inventory.tscn
-res://Customers/Wilma/Wilma.tres
+res://Player/player.gd

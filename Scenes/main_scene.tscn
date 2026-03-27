@@ -7,14 +7,14 @@
 [ext_resource type="Script" uid="uid://1t0wbtqtnn24" path="res://UI/coinbox.gd" id="5_iacmt"]
 [ext_resource type="PackedScene" uid="uid://dninsxpx41bju" path="res://Customers/customer_spawner.tscn" id="6_6ev3c"]
 [ext_resource type="PackedScene" uid="uid://c4c4omaqgh34g" path="res://Customers/customer.tscn" id="7_maf8m"]
-[ext_resource type="PackedScene" uid="uid://bi5phfe1edmdq" path="res://Scenes/day_length.tscn" id="8_huasi"]
+[ext_resource type="FontFile" uid="uid://cb4jctb12u184" path="res://textures/classic font.ttf" id="9_m1efj"]
 
 [sub_resource type="GDScript" id="GDScript_iacmt"]
 script/source = "extends Node2D
 
 
 @onready var player: CharacterBody2D = $Player
-@onready var day_timer: Timer = $DayLength
+@onready var endDayButton: Button = $EndDayButton
 
 var inventory_scene = preload(\"res://Scenes/inventory.tscn\")
 var near_counter: bool = false
@@ -23,13 +23,13 @@ var inventory_open: bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	# THIS IS TEMPORARILY TRUE TO GAME TEST! CHANGE WHEN RELEASING
+	endDayButton.visible = true
 	player.position = GameData.player_position
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if day_timer.is_stopped():
-		print(\"DAY OVER\")
 	if inventory_open:
 		return
 	if near_counter and Input.is_action_just_pressed(\"Interact\"):
@@ -75,6 +75,17 @@ func _on_counter_zone_body_entered(body: Node2D) -> void:
 func _on_counter_zone_body_exited(body: Node2D) -> void:
 	if body == player:
 		near_counter = false
+		
+
+
+
+func _on_customer_spawner_day_over() -> void:
+	endDayButton.visible = true
+
+
+func _on_end_day_button_pressed() -> void:
+	print(\"changing scene...\")
+	SceneTransition.change_scene(\"res://Scenes/night_time.tscn\")
 "
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_jv6wh"]
@@ -148,10 +159,16 @@ physics_material_override = SubResource("PhysicsMaterial_jv6wh")
 position = Vector2(161, 177)
 shape = SubResource("RectangleShape2D_jv6wh")
 
-[node name="DayLength" parent="." unique_id=1727670037 instance=ExtResource("8_huasi")]
-wait_time = 120.0
-one_shot = true
-autostart = true
+[node name="EndDayButton" type="Button" parent="." unique_id=1083288253]
+offset_left = 128.0
+offset_top = 20.0
+offset_right = 192.0
+offset_bottom = 43.0
+theme_override_fonts/font = ExtResource("9_m1efj")
+theme_override_font_sizes/font_size = 16
+text = "END DAY"
 
 [connection signal="body_entered" from="CounterZone" to="." method="_on_counter_zone_body_entered"]
 [connection signal="body_exited" from="CounterZone" to="." method="_on_counter_zone_body_exited"]
+[connection signal="day_over" from="CustomerSpawner" to="." method="_on_customer_spawner_day_over"]
+[connection signal="pressed" from="EndDayButton" to="." method="_on_end_day_button_pressed"]

@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://dkr12bduiylb1"]
+
+[ext_resource type="Script" uid="uid://t1qs41pp4c0m" path="res://UI/scene_transition.gd" id="1_ta8u3"]
+
+[sub_resource type="Animation" id="Animation_ta8u3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_yhhtf"]
+resource_name = "fade_in"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_v7jyy"]
+resource_name = "fade_out"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kco7w"]
+_data = {
+&"RESET": SubResource("Animation_ta8u3"),
+&"fade_in": SubResource("Animation_yhhtf"),
+&"fade_out": SubResource("Animation_v7jyy")
+}
+
+[node name="SceneTransition" type="CanvasLayer" unique_id=643694769]
+script = ExtResource("1_ta8u3")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1920806930]
+modulate = Color(0, 0, 0, 0)
+offset_right = 329.0
+offset_bottom = 180.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect" unique_id=1757996406]
+libraries/ = SubResource("AnimationLibrary_kco7w")

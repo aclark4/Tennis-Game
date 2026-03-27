@@ -4,6 +4,9 @@
 
 [node name="CustomerSpawner" type="Node" unique_id=377438776]
 script = ExtResource("1_rqh08")
+day_customers = 5
+min_spawn_time = 5.0
+max_spawn_time = 15.0
 
 [node name="Timer" type="Timer" parent="." unique_id=1318937041]
 one_shot = true

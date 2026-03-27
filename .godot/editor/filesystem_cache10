@@ -1,148 +1,156 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1773763580
+::res://::1774631429
 Game_Development_Roadmap.md::TextFile::-1::1773423295::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::2615730773902464914::1773423088::1773424425::1::::<><><>0<>0<>61b78ea4eac68a2b90f0f7b960955957<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://Audio/::1773763594
-::res://Audio/Sound Effects/::1773763676
-Sale Made.ogg::AudioStreamOggVorbis::1290900875167214312::1773763653::1773763676::1::::<><><>0<>0<>2b66e9432beed3c7e3585baff11509fc<>res://.godot/imported/Sale Made.ogg-b4e6837483b77f350086af3dcb50fd2b.oggvorbisstr::
-::res://Customers/::1773762957
-Big girl 2.png::CompressedTexture2D::7727163679006829239::1773701053::1773701440::1::::<><><>0<>0<>94d677482217afb7daf01d735d9c04da<>res://.godot/imported/Big girl 2.png-fe276a86c1708077f26aabfb9ec91af7.ctex::
-boy  customer 2.png::CompressedTexture2D::300114213635666138::1773700990::1773701440::1::::<><><>0<>0<>281e1e15731bbb1c5a7e715911bb419b<>res://.godot/imported/boy  customer 2.png-026340cee3cd1cfcd748a38346bed5f5.ctex::
-boy  customer.png::CompressedTexture2D::2786509111970277984::1773700813::1773701440::1::::<><><>0<>0<>9be68f3d87bed5ec3226abae58dc8282<>res://.godot/imported/boy  customer.png-19ba8a989fbe87dc7f4f3df8285deb5b.ctex::
-Checkered skirt.png::CompressedTexture2D::1365321820889604977::1773701078::1773701440::1::::<><><>0<>0<>4f0be0aed299bb7872a229ec433ea259<>res://.godot/imported/Checkered skirt.png-6095fbd8411d38ec1a8425d14317d472.ctex::
-Customer rob.png::CompressedTexture2D::144438749430157386::1773701028::1773701440::1::::<><><>0<>0<>ef7a6ed0468d2104bbc45ddfe93de3ad<>res://.godot/imported/Customer rob.png-c24a5033bf4fddd2738ca2f32dc9028f.ctex::
-customer.gd::GDScript::6351663781391025737::1773705052::0::1::::Customer<>CharacterBody2D<><>0<>0<><>::
-customer.tscn::PackedScene::6814233013317651816::1773762957::0::1::::<><><>0<>0<><>::uid://cwq18erl3cdj2::::res://Customers/customer.gd<>uid://ci4pup2s6i6u7::::res://Customers/Indicator.png
-customer_spawner.gd::GDScript::7178733828657814722::1773761906::0::1::::<>Node<><>0<>0<><>::
+::res://Audio/::1773773086
+::res://Audio/Sound Effects/::1773773086
+Sale Made.ogg::AudioStreamOggVorbis::1290900875167214312::1773773086::1773773086::1::::<><><>0<>0<>2b66e9432beed3c7e3585baff11509fc<>res://.godot/imported/Sale Made.ogg-b4e6837483b77f350086af3dcb50fd2b.oggvorbisstr::
+::res://Customers/::1774631737
+Big girl 2.png::CompressedTexture2D::7727163679006829239::1773773086::1773773086::1::::<><><>0<>0<>94d677482217afb7daf01d735d9c04da<>res://.godot/imported/Big girl 2.png-fe276a86c1708077f26aabfb9ec91af7.ctex::
+boy  customer 2.png::CompressedTexture2D::300114213635666138::1773773086::1773773086::1::::<><><>0<>0<>281e1e15731bbb1c5a7e715911bb419b<>res://.godot/imported/boy  customer 2.png-026340cee3cd1cfcd748a38346bed5f5.ctex::
+boy  customer.png::CompressedTexture2D::2786509111970277984::1773773086::1773773086::1::::<><><>0<>0<>9be68f3d87bed5ec3226abae58dc8282<>res://.godot/imported/boy  customer.png-19ba8a989fbe87dc7f4f3df8285deb5b.ctex::
+Checkered skirt.png::CompressedTexture2D::1365321820889604977::1773773086::1773773086::1::::<><><>0<>0<>4f0be0aed299bb7872a229ec433ea259<>res://.godot/imported/Checkered skirt.png-6095fbd8411d38ec1a8425d14317d472.ctex::
+Customer rob.png::CompressedTexture2D::144438749430157386::1773773086::1773773086::1::::<><><>0<>0<>ef7a6ed0468d2104bbc45ddfe93de3ad<>res://.godot/imported/Customer rob.png-c24a5033bf4fddd2738ca2f32dc9028f.ctex::
+customer.gd::GDScript::6351663781391025737::1773858883::0::1::::Customer<>CharacterBody2D<><>0<>0<><>::
+customer.tscn::PackedScene::6814233013317651816::1773859168::0::1::::<><><>0<>0<><>::uid://cwq18erl3cdj2::::res://Customers/customer.gd<>uid://ci4pup2s6i6u7::::res://Customers/Indicator.png<>uid://bp0ri7arf6u7o::::res://Customers/Impatient.png
+customer_spawner.gd::GDScript::7178733828657814722::1774631737::0::1::::<>Node<><>0<>0<><>::
 customer_spawner.tscn::PackedScene::8089054737896365962::1773702046::0::1::::<><><>0<>0<><>::uid://dajoxyd6wshtq::::res://Customers/customer_spawner.gd
-girl customer short.png::CompressedTexture2D::2397364027198798479::1773700830::1773701440::1::::<><><>0<>0<>ea2cdfb25ed170d1aa5e0f90970384c9<>res://.godot/imported/girl customer short.png-32ff08aca79179cd627d941f742d28d8.ctex::
-Girl with bun 2.png::CompressedTexture2D::1207453124451377735::1773701047::1773701440::1::::<><><>0<>0<>de5684b49090a603636cbc8237ad8769<>res://.godot/imported/Girl with bun 2.png-85e9e6634f377237659e63af7872bc3e.ctex::
-Girl with pony.png::CompressedTexture2D::1150016265565350771::1773701005::1773701440::1::::<><><>0<>0<>12e3986d5661d290408503f195390a74<>res://.godot/imported/Girl with pony.png-1e7813c3766a4c0aaa3ea6b6489bb555.ctex::
-Indicator.png::CompressedTexture2D::5395166372547375988::1773514175::1773514177::1::::<><><>0<>0<>b434452e0743346913df36a00b8ab087<>res://.godot/imported/Indicator.png-0c6063d5b17cd2fc0ac9596cfdfbf605.ctex::
-Little boy withhat.png::CompressedTexture2D::8232923007620855626::1773701035::1773701440::1::::<><><>0<>0<>d3b7fd65971ef2ba9534e6f2e546ded3<>res://.godot/imported/Little boy withhat.png-19688cc9947d6b40a0b9fbe797757704.ctex::
-long hair boy.png::CompressedTexture2D::1382195874399560243::1773701011::1773701440::1::::<><><>0<>0<>fc347425edb24725034234d2cf21cf46<>res://.godot/imported/long hair boy.png-43ac1333b0ad051d491d9aac4a0fe29a.ctex::
-::res://Customers/Alice/::1773763260
-Alice.png::CompressedTexture2D::2977036403954135524::1773701060::1773702868::1::::<><><>0<>0<>3c3b77614045db2c83585cab60f21d94<>res://.godot/imported/Alice.png-935fda0334a9ceeddd8bee30bfcfad38.ctex::
-Alice.tres::Resource/CustomerProfile::7966366046386347747::1773763260::0::1::::<><><>0<>0<><>::uid://dst4rrdv56mpx::::res://Data/CustomerProfile.gd<>uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://biodmb7dbbgcq::::res://Customers/Alice/Alice.png
-::res://Customers/Grace/::1773702585
-Grace.png::CompressedTexture2D::7564899252598209517::1773510602::1773689573::1::::<><><>0<>0<>caea35b4868fd469ae6d757c3f9281c7<>res://.godot/imported/Grace.png-4411c944a8fc821245db7e5b355550c1.ctex::
-Grace.tres::Resource/CustomerProfile::5325100737684825475::1773701956::0::1::::<><><>0<>0<><>::uid://dst4rrdv56mpx::::res://Data/CustomerProfile.gd<>uid://df1q1x8eabq4l::::res://Customers/Grace/Grace.png
-::res://Customers/Hannah/::1773701440
-Hannah.png::CompressedTexture2D::8384212759582361349::1773700704::1773701440::1::::<><><>0<>0<>070e51027e78add4111e861285beea07<>res://.godot/imported/Hannah.png-ef0f8e597ef0f87668ea38e74bff30cc.ctex::
-::res://Customers/John/::1773702892
-John.png::CompressedTexture2D::6088462146673353524::1773700998::1773702571::1::::<><><>0<>0<>20d7226025797dfb0e09ce951f56f9da<>res://.godot/imported/John.png-e8d94cce7463c13b4e805dcbb617f0bb.ctex::
-John.tres::Resource/CustomerProfile::8203124846399820304::1773702892::0::1::::<><><>0<>0<><>::uid://dst4rrdv56mpx::::res://Data/CustomerProfile.gd<>uid://cs0kc12yvgx53::::res://Customers/John/John.png
-::res://Customers/Marcus/::1773702749
-Marcus.png::CompressedTexture2D::7871848758187855577::1773701066::1773702660::1::::<><><>0<>0<>de5b5d9e12d8925ea3c8edc913fcabc7<>res://.godot/imported/Marcus.png-fc5e93cda68b13cc5ce094aa29a7cc44.ctex::
-Marcus.tres::Resource/CustomerProfile::8607824730098974562::1773702746::0::1::::<><><>0<>0<><>::uid://dst4rrdv56mpx::::res://Data/CustomerProfile.gd<>uid://dkfgg0804yq6l::::res://Customers/Marcus/Marcus.png
-::res://Customers/Wilma/::1773702880
-Wilma.png::CompressedTexture2D::2318163367932660104::1773701041::1773702756::1::::<><><>0<>0<>7b07c16149129a5209026f50ccd5103a<>res://.godot/imported/Wilma.png-9ecf9ac1c089a215063310290dcab74c.ctex::
-Wilma.tres::Resource/CustomerProfile::6492071945432381813::1773702876::0::1::::<><><>0<>0<><>::uid://dst4rrdv56mpx::::res://Data/CustomerProfile.gd<>uid://8a62uwex6cts::::res://Customers/Wilma/Wilma.png
-::res://Data/::1773761895
-CustomerProfile.gd::GDScript::8463676463704465021::1773703745::0::1::::CustomerProfile<>Resource<><>0<>0<><>::
-GameData.gd::GDScript::820818450676309475::1773761895::0::1::::<>Node<><>0<>0<><>::
+girl customer short.png::CompressedTexture2D::2397364027198798479::1773773086::1773773086::1::::<><><>0<>0<>ea2cdfb25ed170d1aa5e0f90970384c9<>res://.godot/imported/girl customer short.png-32ff08aca79179cd627d941f742d28d8.ctex::
+Girl with bun 2.png::CompressedTexture2D::1207453124451377735::1773773086::1773773086::1::::<><><>0<>0<>de5684b49090a603636cbc8237ad8769<>res://.godot/imported/Girl with bun 2.png-85e9e6634f377237659e63af7872bc3e.ctex::
+Girl with pony.png::CompressedTexture2D::1150016265565350771::1773773086::1773773086::1::::<><><>0<>0<>12e3986d5661d290408503f195390a74<>res://.godot/imported/Girl with pony.png-1e7813c3766a4c0aaa3ea6b6489bb555.ctex::
+Impatient.png::CompressedTexture2D::3491910938870881414::1773773929::1773773931::1::::<><><>0<>0<>1a9765634d5e58efe749291bb6cc623a<>res://.godot/imported/Impatient.png-4386c5fdbfffbbaa571e035594a4febd.ctex::
+Indicator.png::CompressedTexture2D::5395166372547375988::1773774037::1773774038::1::::<><><>0<>0<>b434452e0743346913df36a00b8ab087<>res://.godot/imported/Indicator.png-0c6063d5b17cd2fc0ac9596cfdfbf605.ctex::
+Little boy withhat.png::CompressedTexture2D::8232923007620855626::1773773086::1773773086::1::::<><><>0<>0<>d3b7fd65971ef2ba9534e6f2e546ded3<>res://.godot/imported/Little boy withhat.png-19688cc9947d6b40a0b9fbe797757704.ctex::
+long hair boy.png::CompressedTexture2D::1382195874399560243::1773773086::1773773086::1::::<><><>0<>0<>fc347425edb24725034234d2cf21cf46<>res://.godot/imported/long hair boy.png-43ac1333b0ad051d491d9aac4a0fe29a.ctex::
+::res://Customers/Alice/::1773773086
+Alice.png::CompressedTexture2D::2977036403954135524::1773773086::1773773086::1::::<><><>0<>0<>3c3b77614045db2c83585cab60f21d94<>res://.godot/imported/Alice.png-935fda0334a9ceeddd8bee30bfcfad38.ctex::
+Alice.tres::Resource/CustomerProfile::7966366046386347747::1773773086::0::1::::<><><>0<>0<><>::uid://dst4rrdv56mpx::::res://Data/CustomerProfile.gd<>uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://biodmb7dbbgcq::::res://Customers/Alice/Alice.png
+::res://Customers/Grace/::1773773086
+Grace.png::CompressedTexture2D::7564899252598209517::1773773086::1773773086::1::::<><><>0<>0<>caea35b4868fd469ae6d757c3f9281c7<>res://.godot/imported/Grace.png-4411c944a8fc821245db7e5b355550c1.ctex::
+Grace.tres::Resource/CustomerProfile::5325100737684825475::1773773086::0::1::::<><><>0<>0<><>::uid://dst4rrdv56mpx::::res://Data/CustomerProfile.gd<>uid://df1q1x8eabq4l::::res://Customers/Grace/Grace.png
+::res://Customers/Hannah/::1773773086
+Hannah.png::CompressedTexture2D::8384212759582361349::1773773086::1773773086::1::::<><><>0<>0<>070e51027e78add4111e861285beea07<>res://.godot/imported/Hannah.png-ef0f8e597ef0f87668ea38e74bff30cc.ctex::
+::res://Customers/John/::1773773086
+John.png::CompressedTexture2D::6088462146673353524::1773773086::1773773086::1::::<><><>0<>0<>20d7226025797dfb0e09ce951f56f9da<>res://.godot/imported/John.png-e8d94cce7463c13b4e805dcbb617f0bb.ctex::
+John.tres::Resource/CustomerProfile::8203124846399820304::1773773086::0::1::::<><><>0<>0<><>::uid://dst4rrdv56mpx::::res://Data/CustomerProfile.gd<>uid://cs0kc12yvgx53::::res://Customers/John/John.png
+::res://Customers/Marcus/::1773773086
+Marcus.png::CompressedTexture2D::7871848758187855577::1773773086::1773773086::1::::<><><>0<>0<>de5b5d9e12d8925ea3c8edc913fcabc7<>res://.godot/imported/Marcus.png-fc5e93cda68b13cc5ce094aa29a7cc44.ctex::
+Marcus.tres::Resource/CustomerProfile::8607824730098974562::1773773086::0::1::::<><><>0<>0<><>::uid://dst4rrdv56mpx::::res://Data/CustomerProfile.gd<>uid://dkfgg0804yq6l::::res://Customers/Marcus/Marcus.png
+::res://Customers/Wilma/::1773773086
+Wilma.png::CompressedTexture2D::2318163367932660104::1773773086::1773773086::1::::<><><>0<>0<>7b07c16149129a5209026f50ccd5103a<>res://.godot/imported/Wilma.png-9ecf9ac1c089a215063310290dcab74c.ctex::
+Wilma.tres::Resource/CustomerProfile::6492071945432381813::1773773086::0::1::::<><><>0<>0<><>::uid://dst4rrdv56mpx::::res://Data/CustomerProfile.gd<>uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://8a62uwex6cts::::res://Customers/Wilma/Wilma.png
+::res://Data/::1773858906
+CustomerProfile.gd::GDScript::8463676463704465021::1773858906::0::1::::CustomerProfile<>Resource<><>0<>0<><>::
+GameData.gd::GDScript::820818450676309475::1773773086::0::1::::<>Node<><>0<>0<><>::
 Item.gd::GDScript::4246754744239246567::1773522929::0::1::::Item<>Resource<><>0<>0<><>::
-ItemDatabase.gd::GDScript::5065669719006262400::1773711605::0::1::::<>Node<><>0<>0<><>::
-::res://Items/::1773758745
-::res://Items/Bags/::1773761469
-Blue Tote Bag.tres::Resource/Item::1612282491988553806::1773760211::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://bxpomprdmick0::::res://textures/Items/Bags/Blue Tote Bag.png
-Pink Tote.tres::Resource/Item::6840344348528209294::1773760469::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://dwq27pps0boay::::res://textures/Items/Bags/Pink Tote Bag.png
-Matcha Bag.tres::Resource/Item::6966449658251792627::1773760458::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://dl1x63kuajtoo::::res://textures/Items/Bags/Matcha Bag.png
-Checkered Bag.tres::Resource/Item::1927650349208437353::1773760458::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://2f74t5hysvj5::::res://textures/Items/Bags/Checkered dag.png
-Purple Ombre.tres::Resource/Item::8782106415129147057::1773760559::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://mop43br16vyk::::res://textures/Items/Bags/Purple Ombre.png
-Flower Big Bag.tres::Resource/Item::3486445248984776580::1773761469::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://ykg3u6km6mhc::::res://textures/Items/Bags/Flower big bag.png
-Tennis Tote.tres::Resource/Item::3967022324421529793::1773760885::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://3gxe6xvcg8de::::res://textures/Items/Bags/Tennis tote.png
-Standard Bag.tres::Resource/Item::2974770655041455954::1773760570::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://ce7idy4hmuhjj::::res://textures/Items/Bags/Standard Bag.png
-::res://Items/Balls/::1773759311
-Blue Ball.tres::Resource/Item::3793826128340616229::1773759311::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://dqqgrfuprfj6v::::res://textures/Items/Balls/Blue Ball.png
-Creeper Ball.tres::Resource/Item::7900357838754790873::1773759311::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://dlre1p3afugp3::::res://textures/Items/Balls/Creeper ball.png
-Fire Ball.tres::Resource/Item::8763472294992950626::1773759311::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://djojfvmrhjai4::::res://textures/Items/Balls/Fire Ball.png
-Flower Ball.tres::Resource/Item::5424337571300775208::1773759311::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://cnx7ngwtuu1v7::::res://textures/Items/Balls/Flower Ball.png
-Pink Ball.tres::Resource/Item::151857358711033122::1773759311::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://dk1hlyo8x61w0::::res://textures/Items/Balls/Pink Ball.png
-Rainbow Ball.tres::Resource/Item::6098782465245022691::1773759311::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://tdre4l4l3ant::::res://textures/Items/Balls/Rainbow Ball.png
-Slow Ball.tres::Resource/Item::2977922779002476107::1773759311::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://bwmrugarfh2lc::::res://textures/Items/Balls/Slow Ball.png
-Standard Ball.tres::Resource/Item::461346013598464275::1773759119::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://bb53pudoqg2os::::res://textures/Items/Balls/Standard Ball.png
-::res://Items/Racquets/::1773759692
-Creeper Racquet.tres::Resource/Item::6233351100944702956::1773759522::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://tkn5dade6idk::::res://textures/Items/Racquets/Creeper Racquet.png
-Fire Racquet.tres::Resource/Item::3156620294367380701::1773759692::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://bmovyfiuokqe3::::res://textures/Items/Racquets/Fire Racquet.png
-Ice Cream Racquet.tres::Resource/Item::4398011904783731251::1773759692::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://bamwv8tkphh0g::::res://textures/Items/Racquets/Ice Cream Racquet.png
-Ice Racquet.tres::Resource/Item::539356952303051010::1773759692::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://blx8i8yggo7ao::::res://textures/Items/Racquets/Ice Racquet.png
-Lake Racquet.tres::Resource/Item::5303077215466759139::1773759522::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://bae0xffg8ei2m::::res://textures/Items/Racquets/Blue-Green Racquet.png
-Rainbow Racquet.tres::Resource/Item::4398607717989220557::1773759692::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://57a0vvbus23f::::res://textures/Items/Racquets/Rainbow Racquet.png
-Standard Racquet.tres::Resource/Item::7956339464249615174::1773759653::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://v4gf44fefhf2::::res://textures/Items/Racquets/Standard Racquet.png
-::res://Items/Shoes/::1773761757
-Nike Dunks.tres::Resource/Item::5342438122036355514::1773761709::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://wvjqo6wg2o5s::::res://textures/Items/Shoes/Nike Dunks.png
-Galaxy Shoes.tres::Resource/Item::8056852957358190318::1773761652::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://c2y1fmvxg1ywd::::res://textures/Items/Shoes/Galaxy Shoes.png
-Speed.tres::Resource/Item::3148374705334666581::1773761735::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://0x5huimtowgk::::res://textures/Items/Shoes/Speed Shoes.png
-Standard Shoes.tres::Resource/Item::4115949636673461588::1773761757::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://bku4gv8coymu3::::res://textures/Items/Shoes/Standard Shoes.png
-Star Shoes.tres::Resource/Item::3716365111601982224::1773713770::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://cdggv7mymorvv::::res://Items/Shoes/Star Shoes.png
-::res://Player/::1773713004
+ItemDatabase.gd::GDScript::5065669719006262400::1773773086::0::1::::<>Node<><>0<>0<><>::
+::res://Items/::1773773086
+::res://Items/Bags/::1773773831
+Blue Tote Bag.tres::Resource/Item::1612282491988553806::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://bxpomprdmick0::::res://textures/Items/Bags/Blue Tote Bag.png
+Checkered Bag.tres::Resource/Item::1927650349208437353::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://2f74t5hysvj5::::res://textures/Items/Bags/Checkered dag.png
+Flower Big Bag.tres::Resource/Item::3486445248984776580::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://ykg3u6km6mhc::::res://textures/Items/Bags/Flower big bag.png
+Matcha Bag.tres::Resource/Item::6966449658251792627::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://dl1x63kuajtoo::::res://textures/Items/Bags/Matcha Bag.png
+Pink Tote.tres::Resource/Item::6840344348528209294::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://dwq27pps0boay::::res://textures/Items/Bags/Pink Tote Bag.png
+Purple Ombre.tres::Resource/Item::8782106415129147057::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://mop43br16vyk::::res://textures/Items/Bags/Purple Ombre.png
+Standard Bag.tres::Resource/Item::2974770655041455954::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://ce7idy4hmuhjj::::res://textures/Items/Bags/Standard Bag.png
+Tennis Tote.tres::Resource/Item::3967022324421529793::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://3gxe6xvcg8de::::res://textures/Items/Bags/Tennis tote.png
+::res://Items/Balls/::1773773831
+Blue Ball.tres::Resource/Item::3793826128340616229::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://dqqgrfuprfj6v::::res://textures/Items/Balls/Blue Ball.png
+Creeper Ball.tres::Resource/Item::7900357838754790873::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://dlre1p3afugp3::::res://textures/Items/Balls/Creeper ball.png
+Fire Ball.tres::Resource/Item::8763472294992950626::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://djojfvmrhjai4::::res://textures/Items/Balls/Fire Ball.png
+Flower Ball.tres::Resource/Item::5424337571300775208::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://cnx7ngwtuu1v7::::res://textures/Items/Balls/Flower Ball.png
+Pink Ball.tres::Resource/Item::151857358711033122::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://dk1hlyo8x61w0::::res://textures/Items/Balls/Pink Ball.png
+Rainbow Ball.tres::Resource/Item::6098782465245022691::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://tdre4l4l3ant::::res://textures/Items/Balls/Rainbow Ball.png
+Slow Ball.tres::Resource/Item::2977922779002476107::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://bwmrugarfh2lc::::res://textures/Items/Balls/Slow Ball.png
+Standard Ball.tres::Resource/Item::461346013598464275::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://bb53pudoqg2os::::res://textures/Items/Balls/Standard Ball.png
+::res://Items/Racquets/::1773773831
+Creeper Racquet.tres::Resource/Item::6233351100944702956::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://tkn5dade6idk::::res://textures/Items/Racquets/Creeper Racquet.png
+Fire Racquet.tres::Resource/Item::3156620294367380701::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://bmovyfiuokqe3::::res://textures/Items/Racquets/Fire Racquet.png
+Ice Cream Racquet.tres::Resource/Item::4398011904783731251::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://bamwv8tkphh0g::::res://textures/Items/Racquets/Ice Cream Racquet.png
+Ice Racquet.tres::Resource/Item::539356952303051010::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://blx8i8yggo7ao::::res://textures/Items/Racquets/Ice Racquet.png
+Lake Racquet.tres::Resource/Item::5303077215466759139::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://bae0xffg8ei2m::::res://textures/Items/Racquets/Blue-Green Racquet.png
+Rainbow Racquet.tres::Resource/Item::4398607717989220557::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://57a0vvbus23f::::res://textures/Items/Racquets/Rainbow Racquet.png
+Standard Racquet.tres::Resource/Item::7956339464249615174::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://v4gf44fefhf2::::res://textures/Items/Racquets/Standard Racquet.png
+::res://Items/Shoes/::1773773831
+Galaxy Shoes.tres::Resource/Item::8056852957358190318::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://c2y1fmvxg1ywd::::res://textures/Items/Shoes/Galaxy Shoes.png
+Nike Dunks.tres::Resource/Item::5342438122036355514::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://wvjqo6wg2o5s::::res://textures/Items/Shoes/Nike Dunks.png
+Speed.tres::Resource/Item::3148374705334666581::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://0x5huimtowgk::::res://textures/Items/Shoes/Speed Shoes.png
+Standard Shoes.tres::Resource/Item::4115949636673461588::1773773831::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://bku4gv8coymu3::::res://textures/Items/Shoes/Standard Shoes.png
+Star Shoes.tres::Resource/Item::3716365111601982224::1773773086::0::1::::<><><>0<>0<><>::uid://b1rfovj0wxec2::::res://Data/Item.gd<>uid://cdggv7mymorvv::::res://Items/Shoes/Star Shoes.png
+::res://Player/::1773773086
 boy_player.png::CompressedTexture2D::5257220253949811479::1773508884::1773510610::1::::<><><>0<>0<>2525ae97a6bd6674f63ad2f034980413<>res://.godot/imported/boy_player.png-ae911239be54ef3df2f69dfe05e2293f.ctex::
 girl_player.png::CompressedTexture2D::6110988917771285375::1773508887::1773510610::1::::<><><>0<>0<>0af4efe98c5042fa7f091fc508b15234<>res://.godot/imported/girl_player.png-b77e002964ef86ba3bca8609163a8b67.ctex::
 player.gd::GDScript::4343203242210705003::1773512893::0::1::::<>CharacterBody2D<><>0<>0<><>::
 Player.png::CompressedTexture2D::1101563064288824551::1773430040::1773510610::1::::<><><>0<>0<>c51c0fd6517f5b1effffce17589209c6<>res://.godot/imported/Player.png-3d0801c65bdfc563657cfa304115f1c7.ctex::
-Player.tscn::PackedScene::732834137225991295::1773713004::0::1::::<><><>0<>0<><>::uid://b2446m2wydw80::::res://Player/player.gd<>uid://ctchdhoc6gtrr::::res://Player/girl_player.png
-::res://Scenes/::1773763362
-customer_drop_zone.gd::GDScript::8373163061399207448::1773762606::0::1::::<>Control<><>0<>0<><>::
-inventory.gd::GDScript::6228709635015648990::1773763362::0::1::::<>Node2D<><>0<>0<><>::
-inventory.tscn::PackedScene::2872417929692946653::1773711435::0::1::::<><><>0<>0<><>::uid://cu0h6465u0vlm::::res://Scenes/inventory.gd<>uid://bs6g5nevc6cvy::::res://Scenes/Inventory.png<>uid://drka1i07w0bmu::::res://Scenes/customer_drop_zone.gd<>uid://cyahp8rnw37ys::::res://UI/coinbox.tscn<>uid://1t0wbtqtnn24::::res://UI/coinbox.gd<>uid://clsrdso52fgu4::::res://Scenes/Shelf.png
+Player.tscn::PackedScene::732834137225991295::1773773086::0::1::::<><><>0<>0<><>::uid://b2446m2wydw80::::res://Player/player.gd<>uid://ctchdhoc6gtrr::::res://Player/girl_player.png
+::res://Scenes/::1774632098
+customer_drop_zone.gd::GDScript::8373163061399207448::1773773086::0::1::::<>Control<><>0<>0<><>::
+day_length.tscn::PackedScene::3010786290850751294::1773773086::0::1::::<><><>0<>0<><>::
+inventory.gd::GDScript::6228709635015648990::1773773086::0::1::::<>Node2D<><>0<>0<><>::
+inventory.tscn::PackedScene::2872417929692946653::1773773086::0::1::::<><><>0<>0<><>::uid://cu0h6465u0vlm::::res://Scenes/inventory.gd<>uid://bs6g5nevc6cvy::::res://textures/Scenes/Inventory.png<>uid://drka1i07w0bmu::::res://Scenes/customer_drop_zone.gd<>uid://cyahp8rnw37ys::::res://UI/coinbox.tscn<>uid://1t0wbtqtnn24::::res://UI/coinbox.gd<>uid://clsrdso52fgu4::::res://textures/Scenes/Shelf.png
 main_scene.gd::GDScript::579458656997647679::1773432565::0::1::::<>Node2D<><>0<>0<><>::
-main_scene.tscn::PackedScene::3491477060380866919::1773763362::0::1::::<><><>0<>0<><>::uid://be8yravqxxg8x::::res://textures/Scenes/ParkScene.png<>uid://bqvyyjvp65ppt::::res://textures/Scenes/ParkShop.png<>uid://ko8w24y58i60::::res://Player/Player.tscn<>uid://cyahp8rnw37ys::::res://UI/coinbox.tscn<>uid://1t0wbtqtnn24::::res://UI/coinbox.gd<>uid://dninsxpx41bju::::res://Customers/customer_spawner.tscn<>uid://c4c4omaqgh34g::::res://Customers/customer.tscn
-::res://Scenes/ItemSlot/::1773762740
-item_slot.gd::GDScript::2024732936033239676::1773761507::0::1::::<>Control<><>0<>0<><>::
-item_slot.tscn::PackedScene::4924747748640787243::1773762740::0::1::::<><><>0<>0<><>::uid://332b5k31oveq::::res://Scenes/ItemSlot/item_slot.gd<>uid://ibhp47dpyx2h::::res://textures/HoverBox.png<>uid://cb4jctb12u184::::res://textures/classic font.ttf
-::res://TennisGame/::1773757756
-::res://TennisGame/Daily Logs/::1773757777
-2026-03-16.md::TextFile::-1::1773718007::0::1::::<><><>0<>0<><>::
-2026-03-17.md::TextFile::-1::1773762905::0::1::::<><><>0<>0<><>::
-::res://textures/::1773758269
+main_scene.tscn::PackedScene::3491477060380866919::1774632098::0::1::::<><><>0<>0<><>::uid://be8yravqxxg8x::::res://textures/Scenes/ParkScene.png<>uid://bqvyyjvp65ppt::::res://textures/Scenes/ParkShop.png<>uid://ko8w24y58i60::::res://Player/Player.tscn<>uid://cyahp8rnw37ys::::res://UI/coinbox.tscn<>uid://1t0wbtqtnn24::::res://UI/coinbox.gd<>uid://dninsxpx41bju::::res://Customers/customer_spawner.tscn<>uid://c4c4omaqgh34g::::res://Customers/customer.tscn<>uid://cb4jctb12u184::::res://textures/classic font.ttf
+night_time.tscn::PackedScene::6987191057423962580::1774632098::0::1::::<><><>0<>0<><>::
+::res://Scenes/ItemSlot/::1773773086
+item_slot.gd::GDScript::2024732936033239676::1773773086::0::1::::<>Control<><>0<>0<><>::
+item_slot.tscn::PackedScene::4924747748640787243::1773773086::0::1::::<><><>0<>0<><>::uid://332b5k31oveq::::res://Scenes/ItemSlot/item_slot.gd<>uid://ibhp47dpyx2h::::res://textures/HoverBox.png<>uid://cb4jctb12u184::::res://textures/classic font.ttf
+::res://TennisGame/::1774631363
+::res://TennisGame/Daily Logs/::1774631396
+2026-03-16.md::TextFile::-1::1773773086::0::1::::<><><>0<>0<><>::
+2026-03-17.md::TextFile::-1::1773773086::0::1::::<><><>0<>0<><>::
+2026-03-27.md::TextFile::-1::1774631425::0::1::::<><><>0<>0<><>::
+::res://TennisGame/Version Requirements/::1773856901
+V0.1.1 CURRENT.md::TextFile::-1::1774631953::0::1::::<><><>0<>0<><>::
+V0.1.2 (future release).md::TextFile::-1::1773856873::0::1::::<><><>0<>0<><>::
+::res://textures/::1773773086
 classic font.ttf::FontFile::4903448191121352503::1773504594::1773504648::1::::<><><>0<>0<>3fd9540bdf0ceb248bd28456aabd190b<>res://.godot/imported/classic font.ttf-5738c69ba764bfcbcdf9f04cbeac2b67.fontdata::
 fontcredit.txt::TextFile::-1::1773504658::0::1::::<><><>0<>0<><>::
 HoverBox.png::CompressedTexture2D::564028505484475145::1773513502::1773513410::1::::<><><>0<>0<>dccc14dd33bd059715d8a84f1bae1e20<>res://.godot/imported/HoverBox.png-3025b6ad190aef1f756992e6bc906d0b.ctex::
-::res://textures/Items/::1773758179
-::res://textures/Items/Bags/::1773758347
-Big tennis bag 2.png::CompressedTexture2D::1863570596231780262::1773520237::1773758347::1::::<><><>0<>0<>b88e89ed69a4faebe319f6648384a7e5<>res://.godot/imported/Big tennis bag 2.png-36d5bc55a64fb4fc31843d5f9f0c9aac.ctex::
-Blue Tote Bag.png::CompressedTexture2D::4032602035368918421::1773521114::1773758347::1::::<><><>0<>0<>ada7854f75f5595f45b6ebd257195d0f<>res://.godot/imported/Blue Tote Bag.png-da3d7c715d06a74096bf40435a195e9e.ctex::
-Checkered dag.png::CompressedTexture2D::1907416443427579412::1773701146::1773758347::1::::<><><>0<>0<>a5b85f2324f30ff1098dc4b098d56aa9<>res://.godot/imported/Checkered dag.png-8c7f0229ca47549dffff93a15318f197.ctex::
-Flower big bag.png::CompressedTexture2D::1705591427866873432::1773701142::1773758347::1::::<><><>0<>0<>3fc4e9d380463016547b79a7d7759991<>res://.godot/imported/Flower big bag.png-79b1232275d7e8ec7932b07c9db9414a.ctex::
-Matcha Bag.png::CompressedTexture2D::7986466490158826878::1773520237::1773758347::1::::<><><>0<>0<>7acb480dab2056cb4c4f2af8b0219899<>res://.godot/imported/Matcha Bag.png-15bd1bd99a4d4942c484762a6b44c887.ctex::
-Pink Tote Bag.png::CompressedTexture2D::8738143971264243176::1773521029::1773758347::1::::<><><>0<>0<>93e27e26e19ca60716792b386e9bed4f<>res://.godot/imported/Pink Tote Bag.png-325a1a90bf4c50dedb9a24f26cf94535.ctex::
-Purple Ombre.png::CompressedTexture2D::872131428134963334::1773520283::1773758347::1::::<><><>0<>0<>f4417500303518c3f4513ae7210623e5<>res://.godot/imported/Purple Ombre.png-6a5b7ace79a9f5eed7f70a1f33740cc0.ctex::
-Standard Bag.png::CompressedTexture2D::5120149229086700887::1773454056::1773758347::1::::<><><>0<>0<>97a8763f95d2f7f6d5481c0b49f3325b<>res://.godot/imported/Standard Bag.png-6c4101f22bf3d09ec871f3c1f319d731.ctex::
-Tennis tote.png::CompressedTexture2D::1979079187109960350::1773701136::1773758347::1::::<><><>0<>0<>c589fdb785cf575aa0ab2a717df4de51<>res://.godot/imported/Tennis tote.png-87d2d3fb5bb83017388807d4b24ddee4.ctex::
-::res://textures/Items/Balls/::1773758347
-Blue Ball.png::CompressedTexture2D::8315708548023055855::1773441581::1773758347::1::::<><><>0<>0<>33ed0e539eb067cad609eb977d8c6a78<>res://.godot/imported/Blue Ball.png-23ec8d02af1cb6b14453f3909122ff52.ctex::
-Creeper ball.png::CompressedTexture2D::7966723882641519778::1773701127::1773758347::1::::<><><>0<>0<>ce0c98989128a92b7695161fc8bbb0be<>res://.godot/imported/Creeper ball.png-062d61c4d686a08a66b07675e7997cfb.ctex::
-Fire Ball.png::CompressedTexture2D::7820419436592970757::1773507362::1773758347::1::::<><><>0<>0<>9ad8d078b05074c32c25f2cb6d09be80<>res://.godot/imported/Fire Ball.png-20176531043e038fa7d9122ae61194d2.ctex::
-Flower Ball.png::CompressedTexture2D::5734743532129903122::1773462329::1773758347::1::::<><><>0<>0<>e6d0c002972c73a779b218a4f5f77636<>res://.godot/imported/Flower Ball.png-d4f888f21340be9a9c812b381e23aaaa.ctex::
-Pink Ball.png::CompressedTexture2D::7915270255466519541::1773462483::1773758347::1::::<><><>0<>0<>d72b478a4f26e7680ba36553566521ca<>res://.godot/imported/Pink Ball.png-a20b034f6eaa05f9957883b47e9b5e06.ctex::
-Rainbow Ball.png::CompressedTexture2D::1340822035940874813::1773507359::1773758347::1::::<><><>0<>0<>51163bd31e445cadb4e415e5dc677c34<>res://.godot/imported/Rainbow Ball.png-afe9d25b627425d85c5aa92c2efe19ce.ctex::
-Slow Ball.png::CompressedTexture2D::3956415997453150092::1773441609::1773758347::1::::<><><>0<>0<>063573cb5708aeab276a6c2f65ae7d20<>res://.godot/imported/Slow Ball.png-508b1077f66013eba721e8d3ea24636e.ctex::
-Standard Ball.png::CompressedTexture2D::2520268778418122122::1773436782::1773758347::1::::<><><>0<>0<>890b12477f5d82273184fc8943072a16<>res://.godot/imported/Standard Ball.png-0cf62c0c4be8552c92bf9a694c006797.ctex::
-::res://textures/Items/Racquets/::1773759428
-Blue-Green Racquet.png::CompressedTexture2D::2396237463445966194::1773462272::1773758347::1::::<><><>0<>0<>4fc6ba38987a9de0fd4b7af5d1bfa629<>res://.godot/imported/Blue-Green Racquet.png-4c0f7828c10d9eafce37d0218c34e294.ctex::
-Creeper Racquet.png::CompressedTexture2D::1355074859099253800::1773701122::1773758347::1::::<><><>0<>0<>8172cf205b62a1fb3e8aa2a6531ef589<>res://.godot/imported/Creeper Racquet.png-fd005dd0bd669f531b626e7efe3f0c2a.ctex::
-Fire Racquet.png::CompressedTexture2D::3258906287711154708::1773442506::1773758347::1::::<><><>0<>0<>5513e463935e662be3b3615885e10342<>res://.godot/imported/Fire Racquet.png-aefbdf50ae6929039058160a87751d84.ctex::
-Ice Cream Racquet.png::CompressedTexture2D::2412568255351205404::1773498867::1773758347::1::::<><><>0<>0<>b845715846bd432a64398dbc3bf82528<>res://.godot/imported/Ice Cream Racquet.png-5695b135b146856bbab37c8ab6cf864b.ctex::
-Ice Racquet.png::CompressedTexture2D::3207998369794443166::1773442681::1773758347::1::::<><><>0<>0<>cd4e185fc953c044eddb4e973fff0b4a<>res://.godot/imported/Ice Racquet.png-87943b2b4333a8d147e4f0a7e1da5685.ctex::
-Rainbow Racquet.png::CompressedTexture2D::2171771177622654297::1773507017::1773758347::1::::<><><>0<>0<>9356fb2d7635b9dcf7eb242f2e221fff<>res://.godot/imported/Rainbow Racquet.png-e33fefb4ad74cb6777ce4030a83ccd73.ctex::
-Standard Racquet.png::CompressedTexture2D::1534207470401746345::1773448400::1773758347::1::::<><><>0<>0<>1ea181846a9d7e71cd42f9c6ab73f3d6<>res://.godot/imported/Standard Racquet.png-b2d27bc2dc472321a035ddff3c4e2cf2.ctex::
-::res://textures/Items/Shoes/::1773761631
-Galaxy Shoes.png::CompressedTexture2D::6719073446267141279::1773701173::1773758347::1::::<><><>0<>0<>8d7ed48c8046f0a626fe135f9c9a6740<>res://.godot/imported/Galaxy Shoes.png-779d81c3ba5e9a9849c16951b92d101e.ctex::
-Nike Dunks.png::CompressedTexture2D::1588082302733858942::1773701170::1773758347::1::::<><><>0<>0<>2f79a9ee6acdcae3e6f969d0d03e3cf2<>res://.godot/imported/Nike Dunks.png-c49ec78755b3c5b81415c4aa2753d7d1.ctex::
-Speed Shoes.png::CompressedTexture2D::1804036853031142222::1773446923::1773758347::1::::<><><>0<>0<>8812352fdc34f1c2a9bfb6b65cf4ecdf<>res://.godot/imported/Speed Shoes.png-9c0c13cf374fbd5b02e78f1dd32f4374.ctex::
-Standard Shoes.png::CompressedTexture2D::3131369336787713428::1773444340::1773758347::1::::<><><>0<>0<>844254fc924e3888902de96a0b521d0a<>res://.godot/imported/Standard Shoes.png-59c07f7c97996d84f201b208d6f96a9e.ctex::
-Star Shoes.png::CompressedTexture2D::4996197668845173971::1773701165::1773758347::1::::<><><>0<>0<>c549c41a140e143e3918e74c51428b61<>res://.godot/imported/Star Shoes.png-160cfcd7cd95078033c2f83f77713997.ctex::
-::res://textures/Scenes/::1773758347
-Inventory.png::CompressedTexture2D::3714234145268090274::1773538310::1773758347::1::::<><><>0<>0<>d10236efe6a7745ac0c4e9cc5d43a23f<>res://.godot/imported/Inventory.png-53916564afd1a0b830a8d7981e641688.ctex::
-InventoryOld.png::CompressedTexture2D::4488355433021343793::1773457563::1773758347::1::::<><><>0<>0<>34630e8f7509e4b200e28850577d521b<>res://.godot/imported/InventoryOld.png-3daf939c6763a063b20babcaed0ce3cd.ctex::
-MainSceneOld.png::CompressedTexture2D::8322801313048547921::1773427711::1773758347::1::::<><><>0<>0<>8c884723e0942673c43ac8a5b65a006b<>res://.godot/imported/MainSceneOld.png-014d90981599f419ca2e604674a772ca.ctex::
-ParkScene.png::CompressedTexture2D::2736788123651488889::1773673011::1773758347::1::::<><><>0<>0<>4048debc87f8cfcb8539bccb2869d129<>res://.godot/imported/ParkScene.png-91f1d9cbbdeea310b3b05703214de552.ctex::
-ParkShop.png::CompressedTexture2D::3554294687492185933::1773518265::1773758347::1::::<><><>0<>0<>d847fe95ea98c933f322595cbb621a17<>res://.godot/imported/ParkShop.png-30b036e18e2e630fa716e521da607d15.ctex::
-pop up box.png::CompressedTexture2D::1837929461272544258::1773513096::1773758347::1::::<><><>0<>0<>c39e0b0f43b69e37b397f595ce3ff021<>res://.godot/imported/pop up box.png-3558872b2b26561d588372fe39da8c2a.ctex::
-Shelf.png::CompressedTexture2D::5583115961683291253::1773523932::1773758347::1::::<><><>0<>0<>caad70399d97b23b67f54f40ad08a93d<>res://.godot/imported/Shelf.png-690e535b25d3d36afd213a9c8d6e7359.ctex::
-Shop.png::CompressedTexture2D::6205949507590182212::1773431840::1773758347::1::::<><><>0<>0<>9ebac3d2696a7069b8bafd11914908cc<>res://.godot/imported/Shop.png-eff2d9c5ff0b2bcb2d1aaaab93696f50.ctex::
-::res://UI/::1773758754
-Coin.png::CompressedTexture2D::5110608854032977259::1773449329::1773758754::1::::<><><>0<>0<>0539cb4c51dcf2fc9e01636ac9aeb133<>res://.godot/imported/Coin.png-32ae862c6f9fb054bc3adbc5cd7e42fc.ctex::
-coinbox.gd::GDScript::1865690406828565183::1773693532::0::1::::<>HBoxContainer<><>0<>0<><>::
-coinbox.tscn::PackedScene::6457827180710346082::1773507746::0::1::::<><><>0<>0<><>::uid://ce2u8mhm6jcsh::::res://Items/Coin.png<>uid://cb4jctb12u184::::res://textures/classic font.ttf
+::res://textures/Items/::1773773086
+::res://textures/Items/Bags/::1773773086
+Big tennis bag 2.png::CompressedTexture2D::1863570596231780262::1773773086::1773773086::1::::<><><>0<>0<>b88e89ed69a4faebe319f6648384a7e5<>res://.godot/imported/Big tennis bag 2.png-36d5bc55a64fb4fc31843d5f9f0c9aac.ctex::
+Blue Tote Bag.png::CompressedTexture2D::4032602035368918421::1773773086::1773773086::1::::<><><>0<>0<>ada7854f75f5595f45b6ebd257195d0f<>res://.godot/imported/Blue Tote Bag.png-da3d7c715d06a74096bf40435a195e9e.ctex::
+Checkered dag.png::CompressedTexture2D::1907416443427579412::1773773086::1773773086::1::::<><><>0<>0<>a5b85f2324f30ff1098dc4b098d56aa9<>res://.godot/imported/Checkered dag.png-8c7f0229ca47549dffff93a15318f197.ctex::
+Flower big bag.png::CompressedTexture2D::1705591427866873432::1773773086::1773773086::1::::<><><>0<>0<>3fc4e9d380463016547b79a7d7759991<>res://.godot/imported/Flower big bag.png-79b1232275d7e8ec7932b07c9db9414a.ctex::
+Matcha Bag.png::CompressedTexture2D::7986466490158826878::1773773086::1773773086::1::::<><><>0<>0<>7acb480dab2056cb4c4f2af8b0219899<>res://.godot/imported/Matcha Bag.png-15bd1bd99a4d4942c484762a6b44c887.ctex::
+Pink Tote Bag.png::CompressedTexture2D::8738143971264243176::1773773086::1773773086::1::::<><><>0<>0<>93e27e26e19ca60716792b386e9bed4f<>res://.godot/imported/Pink Tote Bag.png-325a1a90bf4c50dedb9a24f26cf94535.ctex::
+Purple Ombre.png::CompressedTexture2D::872131428134963334::1773773086::1773773086::1::::<><><>0<>0<>f4417500303518c3f4513ae7210623e5<>res://.godot/imported/Purple Ombre.png-6a5b7ace79a9f5eed7f70a1f33740cc0.ctex::
+Standard Bag.png::CompressedTexture2D::5120149229086700887::1773773086::1773773086::1::::<><><>0<>0<>97a8763f95d2f7f6d5481c0b49f3325b<>res://.godot/imported/Standard Bag.png-6c4101f22bf3d09ec871f3c1f319d731.ctex::
+Tennis tote.png::CompressedTexture2D::1979079187109960350::1773773086::1773773086::1::::<><><>0<>0<>c589fdb785cf575aa0ab2a717df4de51<>res://.godot/imported/Tennis tote.png-87d2d3fb5bb83017388807d4b24ddee4.ctex::
+::res://textures/Items/Balls/::1773773086
+Blue Ball.png::CompressedTexture2D::8315708548023055855::1773773086::1773773086::1::::<><><>0<>0<>33ed0e539eb067cad609eb977d8c6a78<>res://.godot/imported/Blue Ball.png-23ec8d02af1cb6b14453f3909122ff52.ctex::
+Creeper ball.png::CompressedTexture2D::7966723882641519778::1773773086::1773773086::1::::<><><>0<>0<>ce0c98989128a92b7695161fc8bbb0be<>res://.godot/imported/Creeper ball.png-062d61c4d686a08a66b07675e7997cfb.ctex::
+Fire Ball.png::CompressedTexture2D::7820419436592970757::1773773086::1773773086::1::::<><><>0<>0<>9ad8d078b05074c32c25f2cb6d09be80<>res://.godot/imported/Fire Ball.png-20176531043e038fa7d9122ae61194d2.ctex::
+Flower Ball.png::CompressedTexture2D::5734743532129903122::1773773086::1773773086::1::::<><><>0<>0<>e6d0c002972c73a779b218a4f5f77636<>res://.godot/imported/Flower Ball.png-d4f888f21340be9a9c812b381e23aaaa.ctex::
+Pink Ball.png::CompressedTexture2D::7915270255466519541::1773773086::1773773086::1::::<><><>0<>0<>d72b478a4f26e7680ba36553566521ca<>res://.godot/imported/Pink Ball.png-a20b034f6eaa05f9957883b47e9b5e06.ctex::
+Rainbow Ball.png::CompressedTexture2D::1340822035940874813::1773773086::1773773086::1::::<><><>0<>0<>51163bd31e445cadb4e415e5dc677c34<>res://.godot/imported/Rainbow Ball.png-afe9d25b627425d85c5aa92c2efe19ce.ctex::
+Slow Ball.png::CompressedTexture2D::3956415997453150092::1773773086::1773773086::1::::<><><>0<>0<>063573cb5708aeab276a6c2f65ae7d20<>res://.godot/imported/Slow Ball.png-508b1077f66013eba721e8d3ea24636e.ctex::
+Standard Ball.png::CompressedTexture2D::2520268778418122122::1773773086::1773773086::1::::<><><>0<>0<>890b12477f5d82273184fc8943072a16<>res://.godot/imported/Standard Ball.png-0cf62c0c4be8552c92bf9a694c006797.ctex::
+::res://textures/Items/Racquets/::1773773086
+Blue-Green Racquet.png::CompressedTexture2D::2396237463445966194::1773773086::1773773086::1::::<><><>0<>0<>4fc6ba38987a9de0fd4b7af5d1bfa629<>res://.godot/imported/Blue-Green Racquet.png-4c0f7828c10d9eafce37d0218c34e294.ctex::
+Creeper Racquet.png::CompressedTexture2D::1355074859099253800::1773773086::1773773086::1::::<><><>0<>0<>8172cf205b62a1fb3e8aa2a6531ef589<>res://.godot/imported/Creeper Racquet.png-fd005dd0bd669f531b626e7efe3f0c2a.ctex::
+Fire Racquet.png::CompressedTexture2D::3258906287711154708::1773773086::1773773086::1::::<><><>0<>0<>5513e463935e662be3b3615885e10342<>res://.godot/imported/Fire Racquet.png-aefbdf50ae6929039058160a87751d84.ctex::
+Ice Cream Racquet.png::CompressedTexture2D::2412568255351205404::1773773086::1773773086::1::::<><><>0<>0<>b845715846bd432a64398dbc3bf82528<>res://.godot/imported/Ice Cream Racquet.png-5695b135b146856bbab37c8ab6cf864b.ctex::
+Ice Racquet.png::CompressedTexture2D::3207998369794443166::1773773086::1773773086::1::::<><><>0<>0<>cd4e185fc953c044eddb4e973fff0b4a<>res://.godot/imported/Ice Racquet.png-87943b2b4333a8d147e4f0a7e1da5685.ctex::
+Rainbow Racquet.png::CompressedTexture2D::2171771177622654297::1773773086::1773773086::1::::<><><>0<>0<>9356fb2d7635b9dcf7eb242f2e221fff<>res://.godot/imported/Rainbow Racquet.png-e33fefb4ad74cb6777ce4030a83ccd73.ctex::
+Standard Racquet.png::CompressedTexture2D::1534207470401746345::1773773086::1773773086::1::::<><><>0<>0<>1ea181846a9d7e71cd42f9c6ab73f3d6<>res://.godot/imported/Standard Racquet.png-b2d27bc2dc472321a035ddff3c4e2cf2.ctex::
+::res://textures/Items/Shoes/::1773773086
+Galaxy Shoes.png::CompressedTexture2D::6719073446267141279::1773773086::1773773086::1::::<><><>0<>0<>8d7ed48c8046f0a626fe135f9c9a6740<>res://.godot/imported/Galaxy Shoes.png-779d81c3ba5e9a9849c16951b92d101e.ctex::
+Nike Dunks.png::CompressedTexture2D::1588082302733858942::1773773086::1773773086::1::::<><><>0<>0<>2f79a9ee6acdcae3e6f969d0d03e3cf2<>res://.godot/imported/Nike Dunks.png-c49ec78755b3c5b81415c4aa2753d7d1.ctex::
+Speed Shoes.png::CompressedTexture2D::1804036853031142222::1773773086::1773773086::1::::<><><>0<>0<>8812352fdc34f1c2a9bfb6b65cf4ecdf<>res://.godot/imported/Speed Shoes.png-9c0c13cf374fbd5b02e78f1dd32f4374.ctex::
+Standard Shoes.png::CompressedTexture2D::3131369336787713428::1773773086::1773773086::1::::<><><>0<>0<>844254fc924e3888902de96a0b521d0a<>res://.godot/imported/Standard Shoes.png-59c07f7c97996d84f201b208d6f96a9e.ctex::
+Star Shoes.png::CompressedTexture2D::4996197668845173971::1773773086::1773773086::1::::<><><>0<>0<>c549c41a140e143e3918e74c51428b61<>res://.godot/imported/Star Shoes.png-160cfcd7cd95078033c2f83f77713997.ctex::
+::res://textures/Scenes/::1774632419
+Inventory.png::CompressedTexture2D::3714234145268090274::1773773086::1773773086::1::::<><><>0<>0<>d10236efe6a7745ac0c4e9cc5d43a23f<>res://.godot/imported/Inventory.png-53916564afd1a0b830a8d7981e641688.ctex::
+InventoryOld.png::CompressedTexture2D::4488355433021343793::1773773086::1773773086::1::::<><><>0<>0<>34630e8f7509e4b200e28850577d521b<>res://.godot/imported/InventoryOld.png-3daf939c6763a063b20babcaed0ce3cd.ctex::
+MainSceneOld.png::CompressedTexture2D::8322801313048547921::1773773086::1773773086::1::::<><><>0<>0<>8c884723e0942673c43ac8a5b65a006b<>res://.godot/imported/MainSceneOld.png-014d90981599f419ca2e604674a772ca.ctex::
+NightTime.png::CompressedTexture2D::2377229153506131506::1774632418::1774632419::1::::<><><>0<>0<>0cb674302726e12c2b4c8e87e6d7c598<>res://.godot/imported/NightTime.png-40ffcfd0b70eb0d5fed8198500c32623.ctex::
+ParkScene.png::CompressedTexture2D::2736788123651488889::1774632466::1774632467::1::::<><><>0<>0<>4048debc87f8cfcb8539bccb2869d129<>res://.godot/imported/ParkScene.png-91f1d9cbbdeea310b3b05703214de552.ctex::
+ParkShop.png::CompressedTexture2D::3554294687492185933::1773773086::1773773086::1::::<><><>0<>0<>d847fe95ea98c933f322595cbb621a17<>res://.godot/imported/ParkShop.png-30b036e18e2e630fa716e521da607d15.ctex::
+pop up box.png::CompressedTexture2D::1837929461272544258::1773773086::1773773086::1::::<><><>0<>0<>c39e0b0f43b69e37b397f595ce3ff021<>res://.godot/imported/pop up box.png-3558872b2b26561d588372fe39da8c2a.ctex::
+Shelf.png::CompressedTexture2D::5583115961683291253::1773773086::1773773086::1::::<><><>0<>0<>caad70399d97b23b67f54f40ad08a93d<>res://.godot/imported/Shelf.png-690e535b25d3d36afd213a9c8d6e7359.ctex::
+Shop.png::CompressedTexture2D::6205949507590182212::1773773086::1773773086::1::::<><><>0<>0<>9ebac3d2696a7069b8bafd11914908cc<>res://.godot/imported/Shop.png-eff2d9c5ff0b2bcb2d1aaaab93696f50.ctex::
+::res://UI/::1773773086
+Coin.png::CompressedTexture2D::5110608854032977259::1773773086::1773773086::1::::<><><>0<>0<>0539cb4c51dcf2fc9e01636ac9aeb133<>res://.godot/imported/Coin.png-32ae862c6f9fb054bc3adbc5cd7e42fc.ctex::
+coinbox.gd::GDScript::1865690406828565183::1773773086::0::1::::<>HBoxContainer<><>0<>0<><>::
+coinbox.tscn::PackedScene::6457827180710346082::1773773086::0::1::::<><><>0<>0<><>::uid://ce2u8mhm6jcsh::::res://UI/Coin.png<>uid://cb4jctb12u184::::res://textures/classic font.ttf<>uid://snk7i3cliudc::::res://Audio/Sound Effects/Sale Made.ogg

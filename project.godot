@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 ItemDatabase="*uid://cef33th8ku2oy"
 GameData="*uid://lxu03rpk6428"
+SceneTransition="*uid://dkr12bduiylb1"
 
 [display]
 

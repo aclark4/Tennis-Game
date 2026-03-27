@@ -7,6 +7,8 @@ class_name CustomerProfile
 @export var owned_items: Array[Item] = []
 @export var sprite: Texture2D
 @export var disliked_types: Array[String] = []
+@export var impatient_time: int = 15
+@export var priority: int = 0
 
 func has_item(item: Item) -> bool:
 	return item in owned_items

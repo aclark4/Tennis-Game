@@ -2,27 +2,37 @@ extends Node
 
 @export var customer_scene: PackedScene
 @export var max_customers: int = 5
+@export var day_customers: int
 @export var min_spawn_time: float = 10.0
 @export var max_spawn_time: float = 30
 @export var shop_front_x: float = 68.0
 @export var queue_spacing: float = 15.0
 @export var spawn_y: float = 130.0
+@export var customer_number: int = 0
 
 @onready var timer: Timer = $Timer
 
+signal day_over()
+
+var total_customers_today: int = 0
 var active_customers: int = 0
 var customer_pool: Array[CustomerProfile] = []
 var active_customer_ids: Array[String] = []
 
 
 func _ready() -> void:
+	total_customers_today = 0
 	_load_customer_pool()
 	_schedule_next_spawn()
 
 func _on_timer_timeout() -> void:
 	if active_customers < max_customers:
 		_spawn_customer()
-	_schedule_next_spawn()
+	total_customers_today += 1 # A customer was just added to the world. Decrement the customers for the day
+	if day_customers <= total_customers_today: # Customers for the day are done
+		emit_signal("day_over")
+	else:
+		_schedule_next_spawn()
 
 func _schedule_next_spawn() -> void:
 	timer.wait_time = randf_range(min_spawn_time, max_spawn_time)
@@ -84,6 +94,6 @@ func _load_customer_pool() -> void:
 			if ResourceLoader.exists(profile_path):
 				var profile = load(profile_path)
 				if profile is CustomerProfile:
-					print(profile.customer_name)
+					# print(profile.customer_name)
 					customer_pool.append(profile)
 		folder = dir.get_next()
